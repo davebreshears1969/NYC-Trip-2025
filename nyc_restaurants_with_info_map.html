@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4ac9fa558b365d32b9d454e082da763a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4ac9fa558b365d32b9d454e082da763a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4ac9fa558b365d32b9d454e082da763a = L.map(
+                "map_4ac9fa558b365d32b9d454e082da763a",
+                {
+                    center: [40.7673, -73.9819],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9786a637dda767e9e9abeb58a0dde12d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4ac9fa558b365d32b9d454e082da763a);
+        
+    
+            var marker_cluster_8f5e8bc6e79934d42e53258a0a900893 = L.markerClusterGroup(
+                {}
+            );
+            map_4ac9fa558b365d32b9d454e082da763a.addLayer(marker_cluster_8f5e8bc6e79934d42e53258a0a900893);
+        
+    
+            var marker_64edd1e5dac6b84adb3eb1107ee83870 = L.marker(
+                [40.7646, -73.9837],
+                {}
+            ).addTo(marker_cluster_8f5e8bc6e79934d42e53258a0a900893);
+        
+    
+        var popup_68bb6712bd3f1f1c843fb3dbf9f42379 = L.popup({"maxWidth": 300});
+
+        
+            var html_e076cf13106415d60c8f9137ca2fcf7c = $(`<div id="html_e076cf13106415d60c8f9137ca2fcf7c" style="width: 100.0%; height: 100.0%;"><b>City Diner</b><br><a href="https://www.citydiner.com/menu" target="_blank">Menu</a><br><i>Daily: 7:00 AM – 10:00 PM</i></div>`)[0];
+            popup_68bb6712bd3f1f1c843fb3dbf9f42379.setContent(html_e076cf13106415d60c8f9137ca2fcf7c);
+        
+
+        marker_64edd1e5dac6b84adb3eb1107ee83870.bindPopup(popup_68bb6712bd3f1f1c843fb3dbf9f42379)
+        ;
+
+        
+    
+    
+            var marker_420058c034aa34cfb84601610ceca831 = L.marker(
+                [40.7594, -73.9853],
+                {}
+            ).addTo(marker_cluster_8f5e8bc6e79934d42e53258a0a900893);
+        
+    
+        var popup_060dad9d7ba04407f4706a49b9160e47 = L.popup({"maxWidth": 300});
+
+        
+            var html_54208b4ee046b2521139defba7929302 = $(`<div id="html_54208b4ee046b2521139defba7929302" style="width: 100.0%; height: 100.0%;"><b>Café Edison</b><br><a href="https://www.menuism.com/restaurants/cafe-edison-new-york-576695" target="_blank">Menu</a><br><i>Mon-Sun: 7:00 AM – 9:00 PM</i></div>`)[0];
+            popup_060dad9d7ba04407f4706a49b9160e47.setContent(html_54208b4ee046b2521139defba7929302);
+        
+
+        marker_420058c034aa34cfb84601610ceca831.bindPopup(popup_060dad9d7ba04407f4706a49b9160e47)
+        ;
+
+        
+    
+    
+            var marker_621a6be5618a87e0aaedab025716cf75 = L.marker(
+                [40.764, -73.9956],
+                {}
+            ).addTo(marker_cluster_8f5e8bc6e79934d42e53258a0a900893);
+        
+    
+        var popup_aec17e1b469ce3c7794188fb84f23b24 = L.popup({"maxWidth": 300});
+
+        
+            var html_fc78679da9dcb31bf7249c06ebe0b00a = $(`<div id="html_fc78679da9dcb31bf7249c06ebe0b00a" style="width: 100.0%; height: 100.0%;"><b>Sullivan Street Bakery</b><br><a href="https://www.sullivanstreetbakery.com/menu" target="_blank">Menu</a><br><i>Mon–Fri: 7:00 AM – 5:00 PM; Sat–Sun: 8:00 AM – 4:00 PM</i></div>`)[0];
+            popup_aec17e1b469ce3c7794188fb84f23b24.setContent(html_fc78679da9dcb31bf7249c06ebe0b00a);
+        
+
+        marker_621a6be5618a87e0aaedab025716cf75.bindPopup(popup_aec17e1b469ce3c7794188fb84f23b24)
+        ;
+
+        
+    
+    
+            var marker_53183d22d60e25ae19807d9237bd375c = L.marker(
+                [40.7741, -73.9768],
+                {}
+            ).addTo(marker_cluster_8f5e8bc6e79934d42e53258a0a900893);
+        
+    
+        var popup_6bcb9f0f69bffe063648a442c3fc0910 = L.popup({"maxWidth": 300});
+
+        
+            var html_76d63175e4312d1939913af93070b5ec = $(`<div id="html_76d63175e4312d1939913af93070b5ec" style="width: 100.0%; height: 100.0%;"><b>Joe & The Juice</b><br><a href="https://www.joejuice.com/menu" target="_blank">Menu</a><br><i>Daily: 7:00 AM – 8:00 PM</i></div>`)[0];
+            popup_6bcb9f0f69bffe063648a442c3fc0910.setContent(html_76d63175e4312d1939913af93070b5ec);
+        
+
+        marker_53183d22d60e25ae19807d9237bd375c.bindPopup(popup_6bcb9f0f69bffe063648a442c3fc0910)
+        ;
+
+        
+    
+    
+            var marker_7291d756f1c2a1d0925aff81ddf64442 = L.marker(
+                [40.7451, -73.9959],
+                {}
+            ).addTo(marker_cluster_8f5e8bc6e79934d42e53258a0a900893);
+        
+    
+        var popup_a5cbf7d7ce9e21263cd64f82ae8d4de7 = L.popup({"maxWidth": 300});
+
+        
+            var html_4c04e5bc651b2e2e2a84933505b6369f = $(`<div id="html_4c04e5bc651b2e2e2a84933505b6369f" style="width: 100.0%; height: 100.0%;"><b>Variety Coffee Roasters</b><br><a href="https://www.varietycoffeeroasters.com/menu" target="_blank">Menu</a><br><i>Daily: 7:00 AM – 7:00 PM</i></div>`)[0];
+            popup_a5cbf7d7ce9e21263cd64f82ae8d4de7.setContent(html_4c04e5bc651b2e2e2a84933505b6369f);
+        
+
+        marker_7291d756f1c2a1d0925aff81ddf64442.bindPopup(popup_a5cbf7d7ce9e21263cd64f82ae8d4de7)
+        ;
+
+        
+    
+    
+            var marker_7d7d1a11896ac5785d78944210564904 = L.marker(
+                [40.7607, -73.9931],
+                {}
+            ).addTo(marker_cluster_8f5e8bc6e79934d42e53258a0a900893);
+        
+    
+        var popup_a045528655d916d04187a3e8a0637378 = L.popup({"maxWidth": 300});
+
+        
+            var html_1d18dfd38125f2569beb0b25fb9d3771 = $(`<div id="html_1d18dfd38125f2569beb0b25fb9d3771" style="width: 100.0%; height: 100.0%;"><b>Westway Diner</b><br><a href="https://westwaydiner.com/menu" target="_blank">Menu</a><br><i>Daily: 7:00 AM – 9:00 PM</i></div>`)[0];
+            popup_a045528655d916d04187a3e8a0637378.setContent(html_1d18dfd38125f2569beb0b25fb9d3771);
+        
+
+        marker_7d7d1a11896ac5785d78944210564904.bindPopup(popup_a045528655d916d04187a3e8a0637378)
+        ;
+
+        
+    
+    
+            var marker_7037566665708722b2ab09cc41c76769 = L.marker(
+                [40.727, -73.9788],
+                {}
+            ).addTo(marker_cluster_8f5e8bc6e79934d42e53258a0a900893);
+        
+    
+        var popup_3ed2a25f0175bb0230c5b504abe0d1b5 = L.popup({"maxWidth": 300});
+
+        
+            var html_720c8359d53355d84cbf1d5fd0e1c79f = $(`<div id="html_720c8359d53355d84cbf1d5fd0e1c79f" style="width: 100.0%; height: 100.0%;"><b>Ninth Street Espresso</b><br><a href="https://ninthstreetespresso.com/" target="_blank">Menu</a><br><i>Daily: 8:00 AM – 4:00 PM</i></div>`)[0];
+            popup_3ed2a25f0175bb0230c5b504abe0d1b5.setContent(html_720c8359d53355d84cbf1d5fd0e1c79f);
+        
+
+        marker_7037566665708722b2ab09cc41c76769.bindPopup(popup_3ed2a25f0175bb0230c5b504abe0d1b5)
+        ;
+
+        
+    
+    
+            var marker_cf9233bd1e338595a3d9a3823f49e7c6 = L.marker(
+                [40.7724, -73.983],
+                {}
+            ).addTo(marker_cluster_8f5e8bc6e79934d42e53258a0a900893);
+        
+    
+        var popup_6b9c9f841fa4b7653d3b67f860888008 = L.popup({"maxWidth": 300});
+
+        
+            var html_7fe7ceaee8361e40e535da4466cff2c4 = $(`<div id="html_7fe7ceaee8361e40e535da4466cff2c4" style="width: 100.0%; height: 100.0%;"><b>The Smith</b><br><a href="https://thesmithrestaurant.com/menus/" target="_blank">Menu</a><br><i>Mon–Fri: 7:30 AM – 11:00 PM; Sat–Sun: 9:00 AM – 11:00 PM</i></div>`)[0];
+            popup_6b9c9f841fa4b7653d3b67f860888008.setContent(html_7fe7ceaee8361e40e535da4466cff2c4);
+        
+
+        marker_cf9233bd1e338595a3d9a3823f49e7c6.bindPopup(popup_6b9c9f841fa4b7653d3b67f860888008)
+        ;
+
+        
+    
+    
+            var marker_45bb55621eaed1d17f69f5748771864f = L.marker(
+                [40.7845, -73.957],
+                {}
+            ).addTo(marker_cluster_8f5e8bc6e79934d42e53258a0a900893);
+        
+    
+        var popup_1a3f434f9faa58b4af10c3a75121c378 = L.popup({"maxWidth": 300});
+
+        
+            var html_846051eff691a7419fd2941df3db21d7 = $(`<div id="html_846051eff691a7419fd2941df3db21d7" style="width: 100.0%; height: 100.0%;"><b>Bluestone Lane</b><br><a href="https://www.bluestonelane.com/menu/" target="_blank">Menu</a><br><i>Daily: 7:00 AM – 6:00 PM</i></div>`)[0];
+            popup_1a3f434f9faa58b4af10c3a75121c378.setContent(html_846051eff691a7419fd2941df3db21d7);
+        
+
+        marker_45bb55621eaed1d17f69f5748771864f.bindPopup(popup_1a3f434f9faa58b4af10c3a75121c378)
+        ;
+
+        
+    
+    
+            var marker_f57eef1ea045775db9fc7284987e842b = L.marker(
+                [40.7862, -73.9744],
+                {}
+            ).addTo(marker_cluster_8f5e8bc6e79934d42e53258a0a900893);
+        
+    
+        var popup_181952ed183186549fa7a4c68440691e = L.popup({"maxWidth": 300});
+
+        
+            var html_11701f2e2bbef747e2f0e1bea2ee54e4 = $(`<div id="html_11701f2e2bbef747e2f0e1bea2ee54e4" style="width: 100.0%; height: 100.0%;"><b>Peacefood Cafe</b><br><a href="https://www.peacefoodnyc.com/menu" target="_blank">Menu</a><br><i>Mon–Fri: 11:30 AM – 9:30 PM; Sat–Sun: 11:00 AM – 9:30 PM</i></div>`)[0];
+            popup_181952ed183186549fa7a4c68440691e.setContent(html_11701f2e2bbef747e2f0e1bea2ee54e4);
+        
+
+        marker_f57eef1ea045775db9fc7284987e842b.bindPopup(popup_181952ed183186549fa7a4c68440691e)
+        ;
+
+        
+    
+    
+            var marker_3fef03a20056e0766c43f29502add0e2 = L.marker(
+                [40.7636, -73.9874],
+                {}
+            ).addTo(marker_cluster_8f5e8bc6e79934d42e53258a0a900893);
+        
+    
+        var popup_c455507fe09e3353bb3fd2e768111831 = L.popup({"maxWidth": 300});
+
+        
+            var html_5634d5272bd110da600e640a45a8566b = $(`<div id="html_5634d5272bd110da600e640a45a8566b" style="width: 100.0%; height: 100.0%;"><b>Local Kitchen & Wine Bar</b><br><a href="https://www.localkitchennyc.com/menu" target="_blank">Menu</a><br><i>Daily: 4:00 PM – 10:00 PM</i></div>`)[0];
+            popup_c455507fe09e3353bb3fd2e768111831.setContent(html_5634d5272bd110da600e640a45a8566b);
+        
+
+        marker_3fef03a20056e0766c43f29502add0e2.bindPopup(popup_c455507fe09e3353bb3fd2e768111831)
+        ;
+
+        
+    
+    
+            var marker_a331d5e4372dd00809c8e61bd64fa868 = L.marker(
+                [40.7995, -73.9682],
+                {}
+            ).addTo(marker_cluster_8f5e8bc6e79934d42e53258a0a900893);
+        
+    
+        var popup_7a021613e6e7b326683734721d2df5f9 = L.popup({"maxWidth": 300});
+
+        
+            var html_678e2da8fbddbcd539a2a5ea8b5aa1b8 = $(`<div id="html_678e2da8fbddbcd539a2a5ea8b5aa1b8" style="width: 100.0%; height: 100.0%;"><b>Absolute Bagels</b><br><a href="https://www.toasttab.com/absolute-bagels/v3" target="_blank">Menu</a><br><i>Daily: 6:00 AM – 6:00 PM</i></div>`)[0];
+            popup_7a021613e6e7b326683734721d2df5f9.setContent(html_678e2da8fbddbcd539a2a5ea8b5aa1b8);
+        
+
+        marker_a331d5e4372dd00809c8e61bd64fa868.bindPopup(popup_7a021613e6e7b326683734721d2df5f9)
+        ;
+
+        
+    
+    
+            var marker_3422d44a9179a3fd38a952b1135247b2 = L.marker(
+                [40.7673, -73.9819],
+                {}
+            ).addTo(marker_cluster_8f5e8bc6e79934d42e53258a0a900893);
+        
+    
+        var popup_ee6d2c4143c10213ab241363e9968c5b = L.popup({"maxWidth": 300});
+
+        
+            var html_be0c5bcd3bbaf489ade4e6f23705e9b8 = $(`<div id="html_be0c5bcd3bbaf489ade4e6f23705e9b8" style="width: 100.0%; height: 100.0%;"><b>6 Columbus Central Park Hotel</b><br>N/A<br><i></i></div>`)[0];
+            popup_ee6d2c4143c10213ab241363e9968c5b.setContent(html_be0c5bcd3bbaf489ade4e6f23705e9b8);
+        
+
+        marker_3422d44a9179a3fd38a952b1135247b2.bindPopup(popup_ee6d2c4143c10213ab241363e9968c5b)
+        ;
+
+        
+    
+</script>
+</html>
