@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5245e19b10d4bfd168b160d7efa5e298 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5245e19b10d4bfd168b160d7efa5e298" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5245e19b10d4bfd168b160d7efa5e298 = L.map(
+                "map_5245e19b10d4bfd168b160d7efa5e298",
+                {
+                    center: [40.7475, -74.0031],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5b3370603456253de5e2c302d88add72 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5245e19b10d4bfd168b160d7efa5e298);
+        
+    
+            var marker_cluster_a09b8e190d97283abaeae05914d1a523 = L.markerClusterGroup(
+                {}
+            );
+            map_5245e19b10d4bfd168b160d7efa5e298.addLayer(marker_cluster_a09b8e190d97283abaeae05914d1a523);
+        
+    
+            var marker_e2b47e644c921c1d1371c98b28613eaf = L.marker(
+                [40.747756, -74.006889],
+                {}
+            ).addTo(marker_cluster_a09b8e190d97283abaeae05914d1a523);
+        
+    
+            var icon_a119d3d9eab4d43cae7176e6e4019bc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e2b47e644c921c1d1371c98b28613eaf.setIcon(icon_a119d3d9eab4d43cae7176e6e4019bc2);
+        
+    
+        var popup_f6bb6af51256f9f0a116de5649f2ab90 = L.popup({"maxWidth": 300});
+
+        
+            var html_cf40a03d34c6bc31a8cb73c972ae415b = $(`<div id="html_cf40a03d34c6bc31a8cb73c972ae415b" style="width: 100.0%; height: 100.0%;">     <b>303 Gallery</b><br>     555 W 21st St, New York, NY 10011<br>     <i>Hours: Tue–Sat: 10 AM–6 PM<br>     Admission: Free</i><br>     <a href="https://www.303gallery.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_f6bb6af51256f9f0a116de5649f2ab90.setContent(html_cf40a03d34c6bc31a8cb73c972ae415b);
+        
+
+        marker_e2b47e644c921c1d1371c98b28613eaf.bindPopup(popup_f6bb6af51256f9f0a116de5649f2ab90)
+        ;
+
+        
+    
+    
+            var marker_bd5485557d5ce951ab653984a37b8f85 = L.marker(
+                [40.75136, -74.00465],
+                {}
+            ).addTo(marker_cluster_a09b8e190d97283abaeae05914d1a523);
+        
+    
+            var icon_e0994cafc9f0a5145de31c532e2cd12a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bd5485557d5ce951ab653984a37b8f85.setIcon(icon_e0994cafc9f0a5145de31c532e2cd12a);
+        
+    
+        var popup_1b4291f4554cc0cea9a848be1cb7dc9b = L.popup({"maxWidth": 300});
+
+        
+            var html_ae7fe862f0bdc7547d0ae2fafe760e3e = $(`<div id="html_ae7fe862f0bdc7547d0ae2fafe760e3e" style="width: 100.0%; height: 100.0%;">     <b>Albertz Benda</b><br>     515 W 26th St, New York, NY 10001<br>     <i>Hours: Tue–Sat: 10 AM–6 PM<br>     Admission: Free</i><br>     <a href="http://www.albertzbenda.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_1b4291f4554cc0cea9a848be1cb7dc9b.setContent(html_ae7fe862f0bdc7547d0ae2fafe760e3e);
+        
+
+        marker_bd5485557d5ce951ab653984a37b8f85.bindPopup(popup_1b4291f4554cc0cea9a848be1cb7dc9b)
+        ;
+
+        
+    
+    
+            var marker_5c12f52fe2e059a49e69eee5b7869e2b = L.marker(
+                [40.745353, -74.006301],
+                {}
+            ).addTo(marker_cluster_a09b8e190d97283abaeae05914d1a523);
+        
+    
+            var icon_27a3c8f126a595a2b2e5fdc371224672 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5c12f52fe2e059a49e69eee5b7869e2b.setIcon(icon_27a3c8f126a595a2b2e5fdc371224672);
+        
+    
+        var popup_9b70b679e38f3ae3bb89d6a616ec9582 = L.popup({"maxWidth": 300});
+
+        
+            var html_15953858d624c65c7880f67731ff743c = $(`<div id="html_15953858d624c65c7880f67731ff743c" style="width: 100.0%; height: 100.0%;">     <b>David Zwirner</b><br>     525 W 19th St, New York, NY 10011<br>     <i>Hours: Tue–Sat: 10 AM–6 PM<br>     Admission: Free</i><br>     <a href="https://www.davidzwirner.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_9b70b679e38f3ae3bb89d6a616ec9582.setContent(html_15953858d624c65c7880f67731ff743c);
+        
+
+        marker_5c12f52fe2e059a49e69eee5b7869e2b.bindPopup(popup_9b70b679e38f3ae3bb89d6a616ec9582)
+        ;
+
+        
+    
+    
+            var marker_6470ebdf8166844a39ebef57279ae2ee = L.marker(
+                [40.747696, -74.006325],
+                {}
+            ).addTo(marker_cluster_a09b8e190d97283abaeae05914d1a523);
+        
+    
+            var icon_8f4b15f750d80b9f4e0e0472a9dce40c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6470ebdf8166844a39ebef57279ae2ee.setIcon(icon_8f4b15f750d80b9f4e0e0472a9dce40c);
+        
+    
+        var popup_6a306c68050d8001912442918c952d5a = L.popup({"maxWidth": 300});
+
+        
+            var html_6880339682cbf62acb86ac42913f3b9d = $(`<div id="html_6880339682cbf62acb86ac42913f3b9d" style="width: 100.0%; height: 100.0%;">     <b>Gagosian Gallery</b><br>     522 W 21st St, New York, NY 10011<br>     <i>Hours: Tue–Sat: 10 AM–6 PM<br>     Admission: Free</i><br>     <a href="https://gagosian.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_6a306c68050d8001912442918c952d5a.setContent(html_6880339682cbf62acb86ac42913f3b9d);
+        
+
+        marker_6470ebdf8166844a39ebef57279ae2ee.bindPopup(popup_6a306c68050d8001912442918c952d5a)
+        ;
+
+        
+    
+    
+            var marker_2748fe18998344509e5260b03bc06d03 = L.marker(
+                [40.74996, -74.005567],
+                {}
+            ).addTo(marker_cluster_a09b8e190d97283abaeae05914d1a523);
+        
+    
+            var icon_0153979f6668d3bed9393f182f6805bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2748fe18998344509e5260b03bc06d03.setIcon(icon_0153979f6668d3bed9393f182f6805bb);
+        
+    
+        var popup_70d18276fcc8aa04d6711fb87328071f = L.popup({"maxWidth": 300});
+
+        
+            var html_a37618643e82a35d07ff9ce589d7e340 = $(`<div id="html_a37618643e82a35d07ff9ce589d7e340" style="width: 100.0%; height: 100.0%;">     <b>Gladstone Gallery</b><br>     515 W 24th St, New York, NY 10011<br>     <i>Hours: Tue–Sat: 10 AM–6 PM<br>     Admission: Free</i><br>     <a href="https://www.gladstonegallery.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_70d18276fcc8aa04d6711fb87328071f.setContent(html_a37618643e82a35d07ff9ce589d7e340);
+        
+
+        marker_2748fe18998344509e5260b03bc06d03.bindPopup(popup_70d18276fcc8aa04d6711fb87328071f)
+        ;
+
+        
+    
+    
+            var marker_2cc038766e2accfbe2239e0dce998ad0 = L.marker(
+                [40.75111, -74.004578],
+                {}
+            ).addTo(marker_cluster_a09b8e190d97283abaeae05914d1a523);
+        
+    
+            var icon_c1d0b4d32f83b7a43a529bd89874463e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2cc038766e2accfbe2239e0dce998ad0.setIcon(icon_c1d0b4d32f83b7a43a529bd89874463e);
+        
+    
+        var popup_7b32605f8e703bb075e198d787d14229 = L.popup({"maxWidth": 300});
+
+        
+            var html_e6033376e79e366d5f20ff28319a498e = $(`<div id="html_e6033376e79e366d5f20ff28319a498e" style="width: 100.0%; height: 100.0%;">     <b>Greene Naftali</b><br>     508 W 26th St, 8th Floor, New York, NY 10001<br>     <i>Hours: Tue–Sat: 10 AM–6 PM<br>     Admission: Free</i><br>     <a href="https://www.greenenaftaligallery.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_7b32605f8e703bb075e198d787d14229.setContent(html_e6033376e79e366d5f20ff28319a498e);
+        
+
+        marker_2cc038766e2accfbe2239e0dce998ad0.bindPopup(popup_7b32605f8e703bb075e198d787d14229)
+        ;
+
+        
+    
+    
+            var marker_54e844560b46a182cea54ef9d70b520b = L.marker(
+                [40.748217, -74.006096],
+                {}
+            ).addTo(marker_cluster_a09b8e190d97283abaeae05914d1a523);
+        
+    
+            var icon_935c5f6b662f4f1941500179f7eb0ade = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_54e844560b46a182cea54ef9d70b520b.setIcon(icon_935c5f6b662f4f1941500179f7eb0ade);
+        
+    
+        var popup_b26f17cb8df5a954589762cfd4f0a9d7 = L.popup({"maxWidth": 300});
+
+        
+            var html_f26b8228e0a71bbd9c4fa265ff697e47 = $(`<div id="html_f26b8228e0a71bbd9c4fa265ff697e47" style="width: 100.0%; height: 100.0%;">     <b>Hauser & Wirth</b><br>     548 W 22nd St, New York, NY 10011<br>     <i>Hours: Tue–Sat: 10 AM–6 PM<br>     Admission: Free</i><br>     <a href="https://www.hauserwirth.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_b26f17cb8df5a954589762cfd4f0a9d7.setContent(html_f26b8228e0a71bbd9c4fa265ff697e47);
+        
+
+        marker_54e844560b46a182cea54ef9d70b520b.bindPopup(popup_b26f17cb8df5a954589762cfd4f0a9d7)
+        ;
+
+        
+    
+    
+            var marker_fb655cab83e15eeec32d1d16f961fd56 = L.marker(
+                [40.746317, -74.00585],
+                {}
+            ).addTo(marker_cluster_a09b8e190d97283abaeae05914d1a523);
+        
+    
+            var icon_35846956ca61f9432a78f07d5ffed09f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fb655cab83e15eeec32d1d16f961fd56.setIcon(icon_35846956ca61f9432a78f07d5ffed09f);
+        
+    
+        var popup_696c18bff8f5a87e493fed4dc23e400e = L.popup({"maxWidth": 300});
+
+        
+            var html_a18114966bbe874dac1b30d9c336c0e4 = $(`<div id="html_a18114966bbe874dac1b30d9c336c0e4" style="width: 100.0%; height: 100.0%;">     <b>Jack Shainman Gallery</b><br>     513 W 20th St, New York, NY 10011<br>     <i>Hours: Tue–Sat: 10 AM–6 PM<br>     Admission: Free</i><br>     <a href="https://jackshainman.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_696c18bff8f5a87e493fed4dc23e400e.setContent(html_a18114966bbe874dac1b30d9c336c0e4);
+        
+
+        marker_fb655cab83e15eeec32d1d16f961fd56.bindPopup(popup_696c18bff8f5a87e493fed4dc23e400e)
+        ;
+
+        
+    
+    
+            var marker_900a08e3b11b2f306173bcefdeb41cfb = L.marker(
+                [40.75236, -74.0048],
+                {}
+            ).addTo(marker_cluster_a09b8e190d97283abaeae05914d1a523);
+        
+    
+            var icon_7e9af49e5a63bb7102995cea62318e94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_900a08e3b11b2f306173bcefdeb41cfb.setIcon(icon_7e9af49e5a63bb7102995cea62318e94);
+        
+    
+        var popup_9869fad645068c8c6265e6314909caa1 = L.popup({"maxWidth": 300});
+
+        
+            var html_370c00d8cbea974a4c409a1f8282e98a = $(`<div id="html_370c00d8cbea974a4c409a1f8282e98a" style="width: 100.0%; height: 100.0%;">     <b>Kasmin Gallery</b><br>     509 W 27th St, New York, NY 10001<br>     <i>Hours: Tue–Sat: 10 AM–6 PM<br>     Admission: Free</i><br>     <a href="https://www.kasmingallery.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_9869fad645068c8c6265e6314909caa1.setContent(html_370c00d8cbea974a4c409a1f8282e98a);
+        
+
+        marker_900a08e3b11b2f306173bcefdeb41cfb.bindPopup(popup_9869fad645068c8c6265e6314909caa1)
+        ;
+
+        
+    
+    
+            var marker_28ac32bb7f925fbb374ab0e5e0f61a0a = L.marker(
+                [40.749874, -74.005379],
+                {}
+            ).addTo(marker_cluster_a09b8e190d97283abaeae05914d1a523);
+        
+    
+            var icon_a304c864b82739ea64fdb7e2ad4fad21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_28ac32bb7f925fbb374ab0e5e0f61a0a.setIcon(icon_a304c864b82739ea64fdb7e2ad4fad21);
+        
+    
+        var popup_7788e9f317487f336c8519e7b4962beb = L.popup({"maxWidth": 300});
+
+        
+            var html_b314ae49362dcb20ff01b1f7bff68f00 = $(`<div id="html_b314ae49362dcb20ff01b1f7bff68f00" style="width: 100.0%; height: 100.0%;">     <b>Lehmann Maupin</b><br>     501 W 24th St, New York, NY 10011<br>     <i>Hours: Tue–Sat: 10 AM–6 PM<br>     Admission: Free</i><br>     <a href="https://www.lehmannmaupin.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_7788e9f317487f336c8519e7b4962beb.setContent(html_b314ae49362dcb20ff01b1f7bff68f00);
+        
+
+        marker_28ac32bb7f925fbb374ab0e5e0f61a0a.bindPopup(popup_7788e9f317487f336c8519e7b4962beb)
+        ;
+
+        
+    
+    
+            var marker_bdacf6b7b886512921ddca5abcd166d2 = L.marker(
+                [40.749901, -74.00545],
+                {}
+            ).addTo(marker_cluster_a09b8e190d97283abaeae05914d1a523);
+        
+    
+            var icon_6b394ec668450ac7c71a2863ec9c5356 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bdacf6b7b886512921ddca5abcd166d2.setIcon(icon_6b394ec668450ac7c71a2863ec9c5356);
+        
+    
+        var popup_8c37c9ff63b72abde4781834ab8345fd = L.popup({"maxWidth": 300});
+
+        
+            var html_43ece171c2e9a98570bd9fb88116436e = $(`<div id="html_43ece171c2e9a98570bd9fb88116436e" style="width: 100.0%; height: 100.0%;">     <b>Lisson Gallery</b><br>     504 W 24th St, New York, NY 10011<br>     <i>Hours: Tue–Sat: 10 AM–6 PM<br>     Admission: Free</i><br>     <a href="https://www.lissongallery.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_8c37c9ff63b72abde4781834ab8345fd.setContent(html_43ece171c2e9a98570bd9fb88116436e);
+        
+
+        marker_bdacf6b7b886512921ddca5abcd166d2.bindPopup(popup_8c37c9ff63b72abde4781834ab8345fd)
+        ;
+
+        
+    
+    
+            var marker_2854765b3cb13ba1e354fd9ef04d5dc9 = L.marker(
+                [40.750182, -74.0058],
+                {}
+            ).addTo(marker_cluster_a09b8e190d97283abaeae05914d1a523);
+        
+    
+            var icon_57e1a0f46e758b18e5d95fe5e76a18f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2854765b3cb13ba1e354fd9ef04d5dc9.setIcon(icon_57e1a0f46e758b18e5d95fe5e76a18f7);
+        
+    
+        var popup_59a18bdadc70b69df54b7ff6df2c8029 = L.popup({"maxWidth": 300});
+
+        
+            var html_df2008d3839fa1359c6618d713b3eb49 = $(`<div id="html_df2008d3839fa1359c6618d713b3eb49" style="width: 100.0%; height: 100.0%;">     <b>Luhring Augustine</b><br>     531 W 24th St, New York, NY 10011<br>     <i>Hours: Tue–Sat: 10 AM–6 PM<br>     Admission: Free</i><br>     <a href="https://www.luhringaugustine.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_59a18bdadc70b69df54b7ff6df2c8029.setContent(html_df2008d3839fa1359c6618d713b3eb49);
+        
+
+        marker_2854765b3cb13ba1e354fd9ef04d5dc9.bindPopup(popup_59a18bdadc70b69df54b7ff6df2c8029)
+        ;
+
+        
+    
+    
+            var marker_088b47de419b62870254c44e3edd3cf8 = L.marker(
+                [40.749947, -74.005395],
+                {}
+            ).addTo(marker_cluster_a09b8e190d97283abaeae05914d1a523);
+        
+    
+            var icon_04f3c6931cfb86b26e0860071ee8614e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_088b47de419b62870254c44e3edd3cf8.setIcon(icon_04f3c6931cfb86b26e0860071ee8614e);
+        
+    
+        var popup_2d8ec8d5ba07e9d610a935fa0bc6eff4 = L.popup({"maxWidth": 300});
+
+        
+            var html_092c06b367569d77924ef617284862da = $(`<div id="html_092c06b367569d77924ef617284862da" style="width: 100.0%; height: 100.0%;">     <b>Marianne Boesky Gallery</b><br>     507 W 24th St, New York, NY 10011<br>     <i>Hours: Tue–Sat: 10 AM–6 PM<br>     Admission: Free</i><br>     <a href="https://www.boeskygallery.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_2d8ec8d5ba07e9d610a935fa0bc6eff4.setContent(html_092c06b367569d77924ef617284862da);
+        
+
+        marker_088b47de419b62870254c44e3edd3cf8.bindPopup(popup_2d8ec8d5ba07e9d610a935fa0bc6eff4)
+        ;
+
+        
+    
+    
+            var marker_a6b4b6270b8758b8175bb4fb721a49da = L.marker(
+                [40.750011, -74.005712],
+                {}
+            ).addTo(marker_cluster_a09b8e190d97283abaeae05914d1a523);
+        
+    
+            var icon_5b2f6bfd026d2725de85b875c9d401e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a6b4b6270b8758b8175bb4fb721a49da.setIcon(icon_5b2f6bfd026d2725de85b875c9d401e2);
+        
+    
+        var popup_e8f681c605026814b14b42e01914f0eb = L.popup({"maxWidth": 300});
+
+        
+            var html_6a314195d8dc53ce76d3957381b1b571 = $(`<div id="html_6a314195d8dc53ce76d3957381b1b571" style="width: 100.0%; height: 100.0%;">     <b>Matthew Marks Gallery</b><br>     523 W 24th St, New York, NY 10011<br>     <i>Hours: Tue–Sat: 10 AM–6 PM<br>     Admission: Free</i><br>     <a href="https://www.matthewmarks.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_e8f681c605026814b14b42e01914f0eb.setContent(html_6a314195d8dc53ce76d3957381b1b571);
+        
+
+        marker_a6b4b6270b8758b8175bb4fb721a49da.bindPopup(popup_e8f681c605026814b14b42e01914f0eb)
+        ;
+
+        
+    
+    
+            var marker_1d1044777265fcd344997d3975e00e63 = L.marker(
+                [40.74997, -74.005615],
+                {}
+            ).addTo(marker_cluster_a09b8e190d97283abaeae05914d1a523);
+        
+    
+            var icon_10881bd9fefea262ba53a7f2edf62317 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1d1044777265fcd344997d3975e00e63.setIcon(icon_10881bd9fefea262ba53a7f2edf62317);
+        
+    
+        var popup_ddf6dc1f3cff3e029685878f831ba77d = L.popup({"maxWidth": 300});
+
+        
+            var html_de79454ace835a34fa8ebc6205151ab1 = $(`<div id="html_de79454ace835a34fa8ebc6205151ab1" style="width: 100.0%; height: 100.0%;">     <b>Metro Pictures</b><br>     519 W 24th St, New York, NY 10011<br>     <i>Hours: Tue–Sat: 10 AM–6 PM<br>     Admission: Free</i><br>     <a href="http://www.metropictures.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_ddf6dc1f3cff3e029685878f831ba77d.setContent(html_de79454ace835a34fa8ebc6205151ab1);
+        
+
+        marker_1d1044777265fcd344997d3975e00e63.bindPopup(popup_ddf6dc1f3cff3e029685878f831ba77d)
+        ;
+
+        
+    
+</script>
+</html>
