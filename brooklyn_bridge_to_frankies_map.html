@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c58f55de9300ef444c4274c3d63e5d8c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c58f55de9300ef444c4274c3d63e5d8c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c58f55de9300ef444c4274c3d63e5d8c = L.map(
+                "map_c58f55de9300ef444c4274c3d63e5d8c",
+                {
+                    center: [40.6855, -73.994],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_28fc2395cdeb4e3b85d73f620deb64dc = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c58f55de9300ef444c4274c3d63e5d8c);
+        
+    
+            var feature_group_876a5f7d63c837f3747c8a908c161ffa = L.featureGroup(
+                {}
+            ).addTo(map_c58f55de9300ef444c4274c3d63e5d8c);
+        
+    
+            var marker_ecfa9d6b991154c6d4261b70ac301f75 = L.marker(
+                [40.7036, -73.9905],
+                {}
+            ).addTo(feature_group_876a5f7d63c837f3747c8a908c161ffa);
+        
+    
+            var icon_174c3a3641fa0459c4dbe140da81038a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ecfa9d6b991154c6d4261b70ac301f75.setIcon(icon_174c3a3641fa0459c4dbe140da81038a);
+        
+    
+        var popup_809605c8a555d728f11b960f770e5fa5 = L.popup({"maxWidth": 300});
+
+        
+            var html_aae977cd12f5d6e9971b1d680fae612f = $(`<div id="html_aae977cd12f5d6e9971b1d680fae612f" style="width: 100.0%; height: 100.0%;">     <b>Celestine</b><br>     1 John St, DUMBO<br>     11 AM – 3 PM<br>     Mediterranean fare with East River views<br>     <a href="https://celestinebk.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_809605c8a555d728f11b960f770e5fa5.setContent(html_aae977cd12f5d6e9971b1d680fae612f);
+        
+
+        marker_ecfa9d6b991154c6d4261b70ac301f75.bindPopup(popup_809605c8a555d728f11b960f770e5fa5)
+        ;
+
+        
+    
+    
+            var marker_d55d65e60593c5f98096811204573e8d = L.marker(
+                [40.6846, -73.9933],
+                {}
+            ).addTo(feature_group_876a5f7d63c837f3747c8a908c161ffa);
+        
+    
+            var icon_979ee9948f2b7561c733c895a0205ec8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d55d65e60593c5f98096811204573e8d.setIcon(icon_979ee9948f2b7561c733c895a0205ec8);
+        
+    
+        var popup_bb4e308be316839f7f8df124d52b7f6f = L.popup({"maxWidth": 300});
+
+        
+            var html_1e73848f4cc12b2c2ced418e98e71274 = $(`<div id="html_1e73848f4cc12b2c2ced418e98e71274" style="width: 100.0%; height: 100.0%;">     <b>Clover Club</b><br>     210 Smith St, Cobble Hill<br>     11 AM – 3 PM<br>     Vintage bar with refined brunch menu<br>     <a href="https://www.cloverclubny.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_bb4e308be316839f7f8df124d52b7f6f.setContent(html_1e73848f4cc12b2c2ced418e98e71274);
+        
+
+        marker_d55d65e60593c5f98096811204573e8d.bindPopup(popup_bb4e308be316839f7f8df124d52b7f6f)
+        ;
+
+        
+    
+    
+            var marker_04a18788055a71fb8055e9b894e34568 = L.marker(
+                [40.6772, -73.9996],
+                {}
+            ).addTo(feature_group_876a5f7d63c837f3747c8a908c161ffa);
+        
+    
+            var icon_2d902c9a4bac645de8fde37edbe7bf8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_04a18788055a71fb8055e9b894e34568.setIcon(icon_2d902c9a4bac645de8fde37edbe7bf8c);
+        
+    
+        var popup_d4ec90a56f4543347e055930035cc367 = L.popup({"maxWidth": 300});
+
+        
+            var html_b91cfdac38416dbd4fabea1d9f03aad3 = $(`<div id="html_b91cfdac38416dbd4fabea1d9f03aad3" style="width: 100.0%; height: 100.0%;">     <b>Buttermilk Channel</b><br>     524 Court St, Carroll Gardens<br>     10 AM – 3 PM<br>     American bistro with comfort food<br>     <a href="http://www.buttermilkchannelnyc.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_d4ec90a56f4543347e055930035cc367.setContent(html_b91cfdac38416dbd4fabea1d9f03aad3);
+        
+
+        marker_04a18788055a71fb8055e9b894e34568.bindPopup(popup_d4ec90a56f4543347e055930035cc367)
+        ;
+
+        
+    
+    
+            var marker_a053d9d605f76660d25843e94ca3d760 = L.marker(
+                [40.6865, -73.9935],
+                {}
+            ).addTo(feature_group_876a5f7d63c837f3747c8a908c161ffa);
+        
+    
+            var icon_8e7579559c69058177ad315e61d5b580 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a053d9d605f76660d25843e94ca3d760.setIcon(icon_8e7579559c69058177ad315e61d5b580);
+        
+    
+        var popup_72bcb95b4a09489baad12767c6096116 = L.popup({"maxWidth": 300});
+
+        
+            var html_eec0d5d064c10b9bc0799e72b90dae0e = $(`<div id="html_eec0d5d064c10b9bc0799e72b90dae0e" style="width: 100.0%; height: 100.0%;">     <b>Cafe Luluc</b><br>     214 Smith St, Cobble Hill<br>     8 AM – 4 PM<br>     French café known for pancakes<br>     <a href="https://www.cafeluluc.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_72bcb95b4a09489baad12767c6096116.setContent(html_eec0d5d064c10b9bc0799e72b90dae0e);
+        
+
+        marker_a053d9d605f76660d25843e94ca3d760.bindPopup(popup_72bcb95b4a09489baad12767c6096116)
+        ;
+
+        
+    
+    
+            var feature_group_c305ca0bfc570b81f410b6268c2f8790 = L.featureGroup(
+                {}
+            ).addTo(map_c58f55de9300ef444c4274c3d63e5d8c);
+        
+    
+            var marker_75361f5d0972a84177b066ec0e70b6c4 = L.marker(
+                [40.6792, -73.9942],
+                {}
+            ).addTo(feature_group_c305ca0bfc570b81f410b6268c2f8790);
+        
+    
+            var icon_ceb6e751ae5be1b2060bca4b8257ea82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_75361f5d0972a84177b066ec0e70b6c4.setIcon(icon_ceb6e751ae5be1b2060bca4b8257ea82);
+        
+    
+        var popup_a58e65c42991df6215c1d0ca91c9d766 = L.popup({"maxWidth": 300});
+
+        
+            var html_33c4ad8596eb247e3b417fc2b4289960 = $(`<div id="html_33c4ad8596eb247e3b417fc2b4289960" style="width: 100.0%; height: 100.0%;">     <b>Court Tree Collective</b><br>     Court St, Carroll Gardens<br>     Check hours<br>     Gallery supporting emerging artists<br>     <a href="https://www.artsy.net/partner/court-tree-collective" target="_blank">Website</a>     </div>`)[0];
+            popup_a58e65c42991df6215c1d0ca91c9d766.setContent(html_33c4ad8596eb247e3b417fc2b4289960);
+        
+
+        marker_75361f5d0972a84177b066ec0e70b6c4.bindPopup(popup_a58e65c42991df6215c1d0ca91c9d766)
+        ;
+
+        
+    
+    
+            var marker_966b27c769aa20e1fddbed849b474919 = L.marker(
+                [40.6802, -73.9953],
+                {}
+            ).addTo(feature_group_c305ca0bfc570b81f410b6268c2f8790);
+        
+    
+            var icon_5cfa4c8907dc53c2159e5404a65385d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_966b27c769aa20e1fddbed849b474919.setIcon(icon_5cfa4c8907dc53c2159e5404a65385d7);
+        
+    
+        var popup_8f16398b1c8ab77de67dc565a219c5b7 = L.popup({"maxWidth": 300});
+
+        
+            var html_72643f1672e91f0126c2d9d30f642aec = $(`<div id="html_72643f1672e91f0126c2d9d30f642aec" style="width: 100.0%; height: 100.0%;">     <b>One Love Art Space</b><br>     Carroll Gardens<br>     Check hours<br>     Creative hub with art exhibits and classes<br>     <a href="https://www.oneloveartspace.com/about" target="_blank">Website</a>     </div>`)[0];
+            popup_8f16398b1c8ab77de67dc565a219c5b7.setContent(html_72643f1672e91f0126c2d9d30f642aec);
+        
+
+        marker_966b27c769aa20e1fddbed849b474919.bindPopup(popup_8f16398b1c8ab77de67dc565a219c5b7)
+        ;
+
+        
+    
+    
+            var feature_group_c1e9b0bac34cab40b2d467458d138c41 = L.featureGroup(
+                {}
+            ).addTo(map_c58f55de9300ef444c4274c3d63e5d8c);
+        
+    
+            var marker_f8bab6cc07648136a44f170ee16c8f8c = L.marker(
+                [40.6903, -73.9897],
+                {}
+            ).addTo(feature_group_c1e9b0bac34cab40b2d467458d138c41);
+        
+    
+            var icon_b1a94572d9d4256811954a5c0627fcb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_f8bab6cc07648136a44f170ee16c8f8c.setIcon(icon_b1a94572d9d4256811954a5c0627fcb8);
+        
+    
+        var popup_cbe90a7dd2aa362db48a088cf4dba92a = L.popup({"maxWidth": 300});
+
+        
+            var html_71021d621df3b039d4d146b778eaea46 = $(`<div id="html_71021d621df3b039d4d146b778eaea46" style="width: 100.0%; height: 100.0%;">     <b>New York Transit Museum</b><br>     99 Schermerhorn St<br>     10 AM – 4 PM<br>     Subway museum in a decommissioned station<br>     <a href="https://www.nytransitmuseum.org/" target="_blank">Website</a>     </div>`)[0];
+            popup_cbe90a7dd2aa362db48a088cf4dba92a.setContent(html_71021d621df3b039d4d146b778eaea46);
+        
+
+        marker_f8bab6cc07648136a44f170ee16c8f8c.bindPopup(popup_cbe90a7dd2aa362db48a088cf4dba92a)
+        ;
+
+        
+    
+    
+            var feature_group_c40f79b5b2efa3e1cdace785753a5385 = L.featureGroup(
+                {}
+            ).addTo(map_c58f55de9300ef444c4274c3d63e5d8c);
+        
+    
+            var marker_2a5718ee1170cf91de7d137f5d75781a = L.marker(
+                [40.6795, -73.9945],
+                {}
+            ).addTo(feature_group_c40f79b5b2efa3e1cdace785753a5385);
+        
+    
+            var icon_5391c830edc50e8d52aef0f5196a5cf8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_2a5718ee1170cf91de7d137f5d75781a.setIcon(icon_5391c830edc50e8d52aef0f5196a5cf8);
+        
+    
+        var popup_26d689d93e08a510f2d8d7b56ecaf860 = L.popup({"maxWidth": 300});
+
+        
+            var html_a0d4e9b5e135b4ddd88bd172fd981755 = $(`<div id="html_a0d4e9b5e135b4ddd88bd172fd981755" style="width: 100.0%; height: 100.0%;">     <b>Nili</b><br>     360 Smith St<br>     8 AM – 7 PM<br>     Stylish café with curated food & coffee<br>     <a href="https://www.nilibk.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_26d689d93e08a510f2d8d7b56ecaf860.setContent(html_a0d4e9b5e135b4ddd88bd172fd981755);
+        
+
+        marker_2a5718ee1170cf91de7d137f5d75781a.bindPopup(popup_26d689d93e08a510f2d8d7b56ecaf860)
+        ;
+
+        
+    
+    
+            var marker_47ba08cdd1cfbade9374e2705d097ad3 = L.marker(
+                [40.6802, -73.9949],
+                {}
+            ).addTo(feature_group_c40f79b5b2efa3e1cdace785753a5385);
+        
+    
+            var icon_617cdf40f1700a4b3dd23edb3090cb9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_47ba08cdd1cfbade9374e2705d097ad3.setIcon(icon_617cdf40f1700a4b3dd23edb3090cb9e);
+        
+    
+        var popup_eff7a51d111e36810ab655b2aea71e88 = L.popup({"maxWidth": 300});
+
+        
+            var html_32f7e901a907434f533a16d09d0a4e5c = $(`<div id="html_32f7e901a907434f533a16d09d0a4e5c" style="width: 100.0%; height: 100.0%;">     <b>Brooklyn Habit</b><br>     405 Smith St<br>     8 AM – 7 PM<br>     Relaxed café with La Colombe coffee<br>     <a href="https://www.brooklynhabit.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_eff7a51d111e36810ab655b2aea71e88.setContent(html_32f7e901a907434f533a16d09d0a4e5c);
+        
+
+        marker_47ba08cdd1cfbade9374e2705d097ad3.bindPopup(popup_eff7a51d111e36810ab655b2aea71e88)
+        ;
+
+        
+    
+    
+            var marker_70277a6ac9d24eaa27af38a686548252 = L.marker(
+                [40.6813, -73.9956],
+                {}
+            ).addTo(feature_group_c40f79b5b2efa3e1cdace785753a5385);
+        
+    
+            var icon_b9ac295f0717735b8b74cd182932211e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_70277a6ac9d24eaa27af38a686548252.setIcon(icon_b9ac295f0717735b8b74cd182932211e);
+        
+    
+        var popup_6ea891dbc695418eb17204e40744831c = L.popup({"maxWidth": 300});
+
+        
+            var html_fdd0af69c5fe7712489013f24ac57800 = $(`<div id="html_fdd0af69c5fe7712489013f24ac57800" style="width: 100.0%; height: 100.0%;">     <b>East One Coffee Roasters</b><br>     384 Court St<br>     8 AM – 6 PM<br>     Café with house-roasted beans<br>     <a href="https://www.eastonecoffee.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_6ea891dbc695418eb17204e40744831c.setContent(html_fdd0af69c5fe7712489013f24ac57800);
+        
+
+        marker_70277a6ac9d24eaa27af38a686548252.bindPopup(popup_6ea891dbc695418eb17204e40744831c)
+        ;
+
+        
+    
+    
+            var marker_03e32fe8dbdf356c611ba58f7aebe651 = L.marker(
+                [40.6832, -73.9941],
+                {}
+            ).addTo(feature_group_c40f79b5b2efa3e1cdace785753a5385);
+        
+    
+            var icon_cb7580b9c339ade361c50f1987a6728c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_03e32fe8dbdf356c611ba58f7aebe651.setIcon(icon_cb7580b9c339ade361c50f1987a6728c);
+        
+    
+        var popup_8486876c9b7b3cce17fb4a52db896c9e = L.popup({"maxWidth": 300});
+
+        
+            var html_0c9c77c3b2779fe35c031ae964517848 = $(`<div id="html_0c9c77c3b2779fe35c031ae964517848" style="width: 100.0%; height: 100.0%;">     <b>D'Amico Coffee</b><br>     309 Court St<br>     Check hours<br>     3rd-gen roasters since 1948<br>     <a href="https://www.damicocoffee.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_8486876c9b7b3cce17fb4a52db896c9e.setContent(html_0c9c77c3b2779fe35c031ae964517848);
+        
+
+        marker_03e32fe8dbdf356c611ba58f7aebe651.bindPopup(popup_8486876c9b7b3cce17fb4a52db896c9e)
+        ;
+
+        
+    
+    
+            var feature_group_0bf1ec33e52822697761e835cc2012b1 = L.featureGroup(
+                {}
+            ).addTo(map_c58f55de9300ef444c4274c3d63e5d8c);
+        
+    
+            var marker_5cd7c987137d88200876544dee5768be = L.marker(
+                [40.6797, -73.9983],
+                {}
+            ).addTo(feature_group_0bf1ec33e52822697761e835cc2012b1);
+        
+    
+            var icon_f463b1f5f436593db160fe8f1c0a7c1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_5cd7c987137d88200876544dee5768be.setIcon(icon_f463b1f5f436593db160fe8f1c0a7c1d);
+        
+    
+        var popup_89eb2c5269dfa81d6ad41e3f41c9298a = L.popup({"maxWidth": 300});
+
+        
+            var html_a38c182380ec6b38a506b7a9d8c4f2b7 = $(`<div id="html_a38c182380ec6b38a506b7a9d8c4f2b7" style="width: 100.0%; height: 100.0%;">     <b>Black Gold Records</b><br>     461 Court St<br>     8 AM – 8 PM<br>     Coffee + vintage vinyl<br>     <a href="https://blackgoldbrooklyn.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_89eb2c5269dfa81d6ad41e3f41c9298a.setContent(html_a38c182380ec6b38a506b7a9d8c4f2b7);
+        
+
+        marker_5cd7c987137d88200876544dee5768be.bindPopup(popup_89eb2c5269dfa81d6ad41e3f41c9298a)
+        ;
+
+        
+    
+    
+            var marker_001eb2003095807b2162fdf82586d7f9 = L.marker(
+                [40.679, -73.9997],
+                {}
+            ).addTo(feature_group_0bf1ec33e52822697761e835cc2012b1);
+        
+    
+            var icon_46cecffa937f7463ef62f3c49ab870e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_001eb2003095807b2162fdf82586d7f9.setIcon(icon_46cecffa937f7463ef62f3c49ab870e4);
+        
+    
+        var popup_1943dfefa5546c55790886867bd47145 = L.popup({"maxWidth": 300});
+
+        
+            var html_619f420b25755d812f36906a8e1dfc00 = $(`<div id="html_619f420b25755d812f36906a8e1dfc00" style="width: 100.0%; height: 100.0%;">     <b>Almost Ready Records</b><br>     135 Huntington St<br>     11 AM – 8 PM<br>     Punk/garage indie label store<br>     <a href="https://www.discogs.com/record-stores/store/almostready/" target="_blank">Website</a>     </div>`)[0];
+            popup_1943dfefa5546c55790886867bd47145.setContent(html_619f420b25755d812f36906a8e1dfc00);
+        
+
+        marker_001eb2003095807b2162fdf82586d7f9.bindPopup(popup_1943dfefa5546c55790886867bd47145)
+        ;
+
+        
+    
+    
+            var feature_group_17ac0459de07a66b64af8dec8c578167 = L.featureGroup(
+                {}
+            ).addTo(map_c58f55de9300ef444c4274c3d63e5d8c);
+        
+    
+            var marker_fa65bdcdb111d5284112f31c19aaf553 = L.marker(
+                [40.6817, -73.9953],
+                {}
+            ).addTo(feature_group_17ac0459de07a66b64af8dec8c578167);
+        
+    
+            var icon_6aa39016fe835709196331678db7f12a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fa65bdcdb111d5284112f31c19aaf553.setIcon(icon_6aa39016fe835709196331678db7f12a);
+        
+    
+        var popup_f376f7f86bd0724fd1906d9f28dcc8e8 = L.popup({"maxWidth": 300});
+
+        
+            var html_924156b2b734ec70dfe1f9437a86f139 = $(`<div id="html_924156b2b734ec70dfe1f9437a86f139" style="width: 100.0%; height: 100.0%;">     <b>Yesterday's News</b><br>     428 Court St<br>     10 AM – 5:30 PM<br>     Vintage furniture & collectibles<br>     <a href="https://www.yesterdaysnews.biz/" target="_blank">Website</a>     </div>`)[0];
+            popup_f376f7f86bd0724fd1906d9f28dcc8e8.setContent(html_924156b2b734ec70dfe1f9437a86f139);
+        
+
+        marker_fa65bdcdb111d5284112f31c19aaf553.bindPopup(popup_f376f7f86bd0724fd1906d9f28dcc8e8)
+        ;
+
+        
+    
+    
+            var marker_bd704ac9f1ce60e89148f9d24d56bd6f = L.marker(
+                [40.6809, -73.995],
+                {}
+            ).addTo(feature_group_17ac0459de07a66b64af8dec8c578167);
+        
+    
+            var icon_067ca83971106c25c86468e35b5dc46a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_bd704ac9f1ce60e89148f9d24d56bd6f.setIcon(icon_067ca83971106c25c86468e35b5dc46a);
+        
+    
+        var popup_790f1afb595eba8cc33d7f9013888f62 = L.popup({"maxWidth": 300});
+
+        
+            var html_0c4dfd1e58deccd02e745c761b286172 = $(`<div id="html_0c4dfd1e58deccd02e745c761b286172" style="width: 100.0%; height: 100.0%;">     <b>Wanderlustre</b><br>     Carroll Gardens<br>     Check hours<br>     Charming shop with gifts & home goods<br>     <a href="https://www.wanderlustre.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_790f1afb595eba8cc33d7f9013888f62.setContent(html_0c4dfd1e58deccd02e745c761b286172);
+        
+
+        marker_bd704ac9f1ce60e89148f9d24d56bd6f.bindPopup(popup_790f1afb595eba8cc33d7f9013888f62)
+        ;
+
+        
+    
+    
+            var feature_group_18a39966b20945c0d9b8cc46484c6689 = L.featureGroup(
+                {}
+            ).addTo(map_c58f55de9300ef444c4274c3d63e5d8c);
+        
+    
+            var marker_a979984c720393692840ec84633b973b = L.marker(
+                [40.6796, -73.9974],
+                {}
+            ).addTo(feature_group_18a39966b20945c0d9b8cc46484c6689);
+        
+    
+            var icon_b56aa080d8888c94af790c4aa937d3c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a979984c720393692840ec84633b973b.setIcon(icon_b56aa080d8888c94af790c4aa937d3c2);
+        
+    
+        var popup_3d19fccfe97ec2cb876a61c05a93a5d9 = L.popup({"maxWidth": 300});
+
+        
+            var html_ec92704e8bc90c5d6acaf8d9a8547002 = $(`<div id="html_ec92704e8bc90c5d6acaf8d9a8547002" style="width: 100.0%; height: 100.0%;">     <b>Frankies 457 Spuntino</b><br>     457 Court St, Brooklyn<br>     Dinner at 8 PM<br>     Italian comfort food in Carroll Gardens<br>     <a href="https://www.frankies457.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_3d19fccfe97ec2cb876a61c05a93a5d9.setContent(html_ec92704e8bc90c5d6acaf8d9a8547002);
+        
+
+        marker_a979984c720393692840ec84633b973b.bindPopup(popup_3d19fccfe97ec2cb876a61c05a93a5d9)
+        ;
+
+        
+    
+    
+            var layer_control_18bf834e7a07ec7b8507299e8f5665c0 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_28fc2395cdeb4e3b85d73f620deb64dc,
+                },
+                overlays :  {
+                    "Lunch Spots" : feature_group_876a5f7d63c837f3747c8a908c161ffa,
+                    "Art Galleries" : feature_group_c305ca0bfc570b81f410b6268c2f8790,
+                    "Museums" : feature_group_c1e9b0bac34cab40b2d467458d138c41,
+                    "Coffee Shops" : feature_group_c40f79b5b2efa3e1cdace785753a5385,
+                    "Record Shops" : feature_group_0bf1ec33e52822697761e835cc2012b1,
+                    "Antique \u0026 Vintage Shops" : feature_group_17ac0459de07a66b64af8dec8c578167,
+                    "Dinner Reservation" : feature_group_18a39966b20945c0d9b8cc46484c6689,
+                },
+            };
+            L.control.layers(
+                layer_control_18bf834e7a07ec7b8507299e8f5665c0.base_layers,
+                layer_control_18bf834e7a07ec7b8507299e8f5665c0.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_c58f55de9300ef444c4274c3d63e5d8c);
+        
+</script>
+</html>
