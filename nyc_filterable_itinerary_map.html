@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8c7fff489c97086f58deaf141f8ae8a6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8c7fff489c97086f58deaf141f8ae8a6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8c7fff489c97086f58deaf141f8ae8a6 = L.map(
+                "map_8c7fff489c97086f58deaf141f8ae8a6",
+                {
+                    center: [40.7681, -73.9819],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4b05aa4f0ff2915311058c93c4741847 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8c7fff489c97086f58deaf141f8ae8a6);
+        
+    
+            var feature_group_7d7a6ceec834d8f5bf7a2b8d116fa018 = L.featureGroup(
+                {}
+            ).addTo(map_8c7fff489c97086f58deaf141f8ae8a6);
+        
+    
+            var marker_b06df6f900006c7f59cbceecd5046742 = L.marker(
+                [40.7787, -73.9565],
+                {}
+            ).addTo(feature_group_7d7a6ceec834d8f5bf7a2b8d116fa018);
+        
+    
+            var icon_ea19d58429a3a6c5ed2fd66733b7353a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b06df6f900006c7f59cbceecd5046742.setIcon(icon_ea19d58429a3a6c5ed2fd66733b7353a);
+        
+    
+        var popup_ee03c14cd53a8d66fbaf487f96dc3d59 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4c84d8a677b5321d7b2623cd7b87e8d = $(`<div id="html_a4c84d8a677b5321d7b2623cd7b87e8d" style="width: 100.0%; height: 100.0%;">     <b>Lexington Candy Shop</b><br>1226 Lexington Avenue (at 83rd Street), New York, NY 10028<br><i>Mon–Fri: 7 AM – 6 PM; Sat: 8 AM – 6 PM; Sun: 8 AM – 4 PM</i><br>     <a href="https://www.lexingtoncandyshop.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_ee03c14cd53a8d66fbaf487f96dc3d59.setContent(html_a4c84d8a677b5321d7b2623cd7b87e8d);
+        
+
+        marker_b06df6f900006c7f59cbceecd5046742.bindPopup(popup_ee03c14cd53a8d66fbaf487f96dc3d59)
+        ;
+
+        
+    
+    
+            var marker_3a3c5899d41333d1aa0636c48150f687 = L.marker(
+                [40.7607, -73.9931],
+                {}
+            ).addTo(feature_group_7d7a6ceec834d8f5bf7a2b8d116fa018);
+        
+    
+            var icon_178404a1af9fc33ed73336ca9b2b5e80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3a3c5899d41333d1aa0636c48150f687.setIcon(icon_178404a1af9fc33ed73336ca9b2b5e80);
+        
+    
+        var popup_85a7abb7193738eae198031e97d4aae3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6fa05030d8d5351ae1e4da8ed95e1d35 = $(`<div id="html_6fa05030d8d5351ae1e4da8ed95e1d35" style="width: 100.0%; height: 100.0%;">     <b>Westway Diner</b><br>614 9th Avenue, New York, NY 10036<br><i>Sun–Thu: 6 AM – 1 AM; Fri–Sat: Open 24 Hours</i><br>     <a href="https://www.westwaydiner.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_85a7abb7193738eae198031e97d4aae3.setContent(html_6fa05030d8d5351ae1e4da8ed95e1d35);
+        
+
+        marker_3a3c5899d41333d1aa0636c48150f687.bindPopup(popup_85a7abb7193738eae198031e97d4aae3)
+        ;
+
+        
+    
+    
+            var marker_b65025611cd3bedc1508784985b929e9 = L.marker(
+                [40.7619, -73.9912],
+                {}
+            ).addTo(feature_group_7d7a6ceec834d8f5bf7a2b8d116fa018);
+        
+    
+            var icon_249560fa9f625cc216ae5269cc1e9d98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b65025611cd3bedc1508784985b929e9.setIcon(icon_249560fa9f625cc216ae5269cc1e9d98);
+        
+    
+        var popup_230977b46c7aa04c4b208e6355e7b85a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4bf531d9ff799ae13c6c3889d8980223 = $(`<div id="html_4bf531d9ff799ae13c6c3889d8980223" style="width: 100.0%; height: 100.0%;">     <b>Galaxy Diner</b><br>665 9th Avenue, New York, NY 10036<br><i>Daily: 7 AM – 11 PM</i><br>     <a href="https://www.yelp.com/biz/galaxy-diner-new-york" target="_blank">Website</a>     </div>`)[0];
+            popup_230977b46c7aa04c4b208e6355e7b85a.setContent(html_4bf531d9ff799ae13c6c3889d8980223);
+        
+
+        marker_b65025611cd3bedc1508784985b929e9.bindPopup(popup_230977b46c7aa04c4b208e6355e7b85a)
+        ;
+
+        
+    
+    
+            var marker_0a5104afccfa1fdc214cf62256deb8fc = L.marker(
+                [40.7294, -73.9801],
+                {}
+            ).addTo(feature_group_7d7a6ceec834d8f5bf7a2b8d116fa018);
+        
+    
+            var icon_b28ae9ac175076f173fce4e429846c45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0a5104afccfa1fdc214cf62256deb8fc.setIcon(icon_b28ae9ac175076f173fce4e429846c45);
+        
+    
+        var popup_5212b269290f519972f3e2ded5d3351b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae63dec5fe455b2f0a9aec19a9300dee = $(`<div id="html_ae63dec5fe455b2f0a9aec19a9300dee" style="width: 100.0%; height: 100.0%;">     <b>Moonstruck East Village</b><br>449 E 13th St, New York, NY 10009<br><i>Open 24 hours</i><br>     <a href="https://www.yelp.com/biz/moonstruck-east-village-new-york" target="_blank">Website</a>     </div>`)[0];
+            popup_5212b269290f519972f3e2ded5d3351b.setContent(html_ae63dec5fe455b2f0a9aec19a9300dee);
+        
+
+        marker_0a5104afccfa1fdc214cf62256deb8fc.bindPopup(popup_5212b269290f519972f3e2ded5d3351b)
+        ;
+
+        
+    
+    
+            var marker_00bf26b612a25e6ad73b83d39665347b = L.marker(
+                [40.7903, -73.9745],
+                {}
+            ).addTo(feature_group_7d7a6ceec834d8f5bf7a2b8d116fa018);
+        
+    
+            var icon_c6b8c2b1fce68e28c02f2639c38a5e4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_00bf26b612a25e6ad73b83d39665347b.setIcon(icon_c6b8c2b1fce68e28c02f2639c38a5e4f);
+        
+    
+        var popup_1f69f32bd07cedb9f16a48d2ed2c8c39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be7b020e41015123d3f93464f5484f8b = $(`<div id="html_be7b020e41015123d3f93464f5484f8b" style="width: 100.0%; height: 100.0%;">     <b>City Diner</b><br>2441 Broadway (at W 90th Street), New York, NY 10024<br><i>Daily: 8 AM – 9 PM</i><br>     <a href="https://www.citydiner.nyc/" target="_blank">Website</a>     </div>`)[0];
+            popup_1f69f32bd07cedb9f16a48d2ed2c8c39.setContent(html_be7b020e41015123d3f93464f5484f8b);
+        
+
+        marker_00bf26b612a25e6ad73b83d39665347b.bindPopup(popup_1f69f32bd07cedb9f16a48d2ed2c8c39)
+        ;
+
+        
+    
+    
+            var feature_group_d6e769735fee3bc6ca6412f5616e10bc = L.featureGroup(
+                {}
+            ).addTo(map_8c7fff489c97086f58deaf141f8ae8a6);
+        
+    
+            var marker_d1e923c53f5608f15de9279a19569ab1 = L.marker(
+                [40.7614, -73.9776],
+                {}
+            ).addTo(feature_group_d6e769735fee3bc6ca6412f5616e10bc);
+        
+    
+            var icon_e22805249c5019137ce3c592b0b57273 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d1e923c53f5608f15de9279a19569ab1.setIcon(icon_e22805249c5019137ce3c592b0b57273);
+        
+    
+        var popup_92128bccb3cfbf33a2e3b4ae1fc1c85f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_403de3900622861dfff5020c8013e134 = $(`<div id="html_403de3900622861dfff5020c8013e134" style="width: 100.0%; height: 100.0%;">     <b>MoMA</b><br>11 W 53rd St, New York, NY 10019<br><i>Daily: 10:30 AM – 5:30 PM; Fridays until 8:30 PM</i><br>     <a href="https://visit.moma.org/select" target="_blank">Buy Tickets</a>     </div>`)[0];
+            popup_92128bccb3cfbf33a2e3b4ae1fc1c85f.setContent(html_403de3900622861dfff5020c8013e134);
+        
+
+        marker_d1e923c53f5608f15de9279a19569ab1.bindPopup(popup_92128bccb3cfbf33a2e3b4ae1fc1c85f)
+        ;
+
+        
+    
+    
+            var marker_d9145d7a34d2fae4b684456a7f4a5f87 = L.marker(
+                [40.7794, -73.9632],
+                {}
+            ).addTo(feature_group_d6e769735fee3bc6ca6412f5616e10bc);
+        
+    
+            var icon_b488b790121c4a2ef07f23f0dab0e591 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d9145d7a34d2fae4b684456a7f4a5f87.setIcon(icon_b488b790121c4a2ef07f23f0dab0e591);
+        
+    
+        var popup_9f576ed4e42cee7567daeb79d2b86660 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5cbb99e71784ba7ba85d8cde444cb411 = $(`<div id="html_5cbb99e71784ba7ba85d8cde444cb411" style="width: 100.0%; height: 100.0%;">     <b>The Met</b><br>1000 5th Ave, New York, NY 10028<br><i>Sun–Tue, Thu: 10 AM – 5 PM; Fri–Sat: 10 AM – 9 PM; Closed Wed</i><br>     <a href="https://engage.metmuseum.org/admission" target="_blank">Buy Tickets</a>     </div>`)[0];
+            popup_9f576ed4e42cee7567daeb79d2b86660.setContent(html_5cbb99e71784ba7ba85d8cde444cb411);
+        
+
+        marker_d9145d7a34d2fae4b684456a7f4a5f87.bindPopup(popup_9f576ed4e42cee7567daeb79d2b86660)
+        ;
+
+        
+    
+    
+            var marker_860dda37effe5510716af668ef96de3e = L.marker(
+                [40.783, -73.959],
+                {}
+            ).addTo(feature_group_d6e769735fee3bc6ca6412f5616e10bc);
+        
+    
+            var icon_c7ec20a3e909c4ba674382fe0c570252 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_860dda37effe5510716af668ef96de3e.setIcon(icon_c7ec20a3e909c4ba674382fe0c570252);
+        
+    
+        var popup_cd3b219e09c859a54e424f5ef90bf1d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8f597abab026c6da8971c40937777f3 = $(`<div id="html_c8f597abab026c6da8971c40937777f3" style="width: 100.0%; height: 100.0%;">     <b>Guggenheim Museum</b><br>1071 5th Ave, New York, NY 10128<br><i>Sun–Mon, Wed–Fri: 11 AM – 6 PM; Sat: 11 AM – 8 PM; Closed Tue</i><br>     <a href="https://www.guggenheim.org/buy-tickets" target="_blank">Buy Tickets</a>     </div>`)[0];
+            popup_cd3b219e09c859a54e424f5ef90bf1d7.setContent(html_c8f597abab026c6da8971c40937777f3);
+        
+
+        marker_860dda37effe5510716af668ef96de3e.bindPopup(popup_cd3b219e09c859a54e424f5ef90bf1d7)
+        ;
+
+        
+    
+    
+            var marker_e7136b1b5990c18ff0604e31c80930cd = L.marker(
+                [40.7401, -73.997],
+                {}
+            ).addTo(feature_group_d6e769735fee3bc6ca6412f5616e10bc);
+        
+    
+            var icon_ba7726a99b08847de3b860937fdb4002 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e7136b1b5990c18ff0604e31c80930cd.setIcon(icon_ba7726a99b08847de3b860937fdb4002);
+        
+    
+        var popup_a8aaf9a4c8e5cfbc2bfe7423d65f79a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_edeb74a4cfe749d44dbeeef68d47c8fc = $(`<div id="html_edeb74a4cfe749d44dbeeef68d47c8fc" style="width: 100.0%; height: 100.0%;">     <b>Rubin Museum of Art</b><br>150 W 17th St, New York, NY 10011<br><i>Thu: 11 AM – 5 PM; Fri: 11 AM – 10 PM; Sat–Sun: 11 AM – 5 PM</i><br>     <a href="https://defunct.rubinmuseum.org/page/tickets/" target="_blank">Buy Tickets</a>     </div>`)[0];
+            popup_a8aaf9a4c8e5cfbc2bfe7423d65f79a4.setContent(html_edeb74a4cfe749d44dbeeef68d47c8fc);
+        
+
+        marker_e7136b1b5990c18ff0604e31c80930cd.bindPopup(popup_a8aaf9a4c8e5cfbc2bfe7423d65f79a4)
+        ;
+
+        
+    
+    
+            var marker_83c8b949de56c86a228acb1cbbb30c7d = L.marker(
+                [40.7223, -73.9927],
+                {}
+            ).addTo(feature_group_d6e769735fee3bc6ca6412f5616e10bc);
+        
+    
+            var icon_67a4dcd205999718a71fc4395261b629 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_83c8b949de56c86a228acb1cbbb30c7d.setIcon(icon_67a4dcd205999718a71fc4395261b629);
+        
+    
+        var popup_c0479c07685026acc06ab59e41484f6e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_763e6b46410ff8b5fe3e939f31fb0636 = $(`<div id="html_763e6b46410ff8b5fe3e939f31fb0636" style="width: 100.0%; height: 100.0%;">     <b>New Museum</b><br>235 Bowery, New York, NY 10002<br><i>Wed–Sun: 11 AM – 6 PM; Closed Mon–Tue</i><br>     <a href="https://www.newmuseum.org/visit/" target="_blank">Buy Tickets</a>     </div>`)[0];
+            popup_c0479c07685026acc06ab59e41484f6e.setContent(html_763e6b46410ff8b5fe3e939f31fb0636);
+        
+
+        marker_83c8b949de56c86a228acb1cbbb30c7d.bindPopup(popup_c0479c07685026acc06ab59e41484f6e)
+        ;
+
+        
+    
+    
+            var marker_6ab31b93fb8e445311ecba916776de10 = L.marker(
+                [40.7396, -74.0089],
+                {}
+            ).addTo(feature_group_d6e769735fee3bc6ca6412f5616e10bc);
+        
+    
+            var icon_ac774389c476cc9124da8789362406d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6ab31b93fb8e445311ecba916776de10.setIcon(icon_ac774389c476cc9124da8789362406d6);
+        
+    
+        var popup_64cb2827dfd1a8cb02199c0ca503d018 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59aa2529962abbda987aad9e778d3661 = $(`<div id="html_59aa2529962abbda987aad9e778d3661" style="width: 100.0%; height: 100.0%;">     <b>Whitney Museum</b><br>99 Gansevoort St, New York, NY 10014<br><i>Mon, Wed–Sun: 10:30 AM – 6 PM; Closed Tue</i><br>     <a href="https://whitney.org/visit" target="_blank">Buy Tickets</a>     </div>`)[0];
+            popup_64cb2827dfd1a8cb02199c0ca503d018.setContent(html_59aa2529962abbda987aad9e778d3661);
+        
+
+        marker_6ab31b93fb8e445311ecba916776de10.bindPopup(popup_64cb2827dfd1a8cb02199c0ca503d018)
+        ;
+
+        
+    
+    
+            var marker_c41ff19ecee2534c27b9d1173d71faa8 = L.marker(
+                [40.7455, -73.9477],
+                {}
+            ).addTo(feature_group_d6e769735fee3bc6ca6412f5616e10bc);
+        
+    
+            var icon_b97ed62d10c3b2058ab0b4120d7d2b45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c41ff19ecee2534c27b9d1173d71faa8.setIcon(icon_b97ed62d10c3b2058ab0b4120d7d2b45);
+        
+    
+        var popup_9bfbe4b25913e6814017fd1b6ba460a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0825953d31cffacb93ad90cbedd15454 = $(`<div id="html_0825953d31cffacb93ad90cbedd15454" style="width: 100.0%; height: 100.0%;">     <b>MoMA PS1</b><br>22-25 Jackson Ave, Queens, NY 11101<br><i>Thu–Mon: 12 PM – 6 PM; Closed Tue–Wed</i><br>     <a href="https://www.momaps1.org/visit/" target="_blank">Buy Tickets</a>     </div>`)[0];
+            popup_9bfbe4b25913e6814017fd1b6ba460a5.setContent(html_0825953d31cffacb93ad90cbedd15454);
+        
+
+        marker_c41ff19ecee2534c27b9d1173d71faa8.bindPopup(popup_9bfbe4b25913e6814017fd1b6ba460a5)
+        ;
+
+        
+    
+    
+            var marker_c895b1101a69a353618e77db812350c4 = L.marker(
+                [40.7563, -73.9235],
+                {}
+            ).addTo(feature_group_d6e769735fee3bc6ca6412f5616e10bc);
+        
+    
+            var icon_ef33f9f59d087edf53feec5dedc5106f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c895b1101a69a353618e77db812350c4.setIcon(icon_ef33f9f59d087edf53feec5dedc5106f);
+        
+    
+        var popup_f140b6de241374669f7a3ff2eb59209c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ec8c8b35e6808b883254a6cbc1adeba = $(`<div id="html_0ec8c8b35e6808b883254a6cbc1adeba" style="width: 100.0%; height: 100.0%;">     <b>Museum of the Moving Image</b><br>36-01 35th Ave, Queens, NY 11106<br><i>Thu: 2 PM – 6 PM; Fri: 2 PM – 8 PM; Sat–Sun: 12 PM – 6 PM</i><br>     <a href="https://movingimage.org/visit/museum-admission-tickets/" target="_blank">Buy Tickets</a>     </div>`)[0];
+            popup_f140b6de241374669f7a3ff2eb59209c.setContent(html_0ec8c8b35e6808b883254a6cbc1adeba);
+        
+
+        marker_c895b1101a69a353618e77db812350c4.bindPopup(popup_f140b6de241374669f7a3ff2eb59209c)
+        ;
+
+        
+    
+    
+            var marker_060b2389825a3092c6056ccc2dd6393b = L.marker(
+                [40.7712, -73.9676],
+                {}
+            ).addTo(feature_group_d6e769735fee3bc6ca6412f5616e10bc);
+        
+    
+            var icon_7a9b43c968f0d02fa4906ac5b983f902 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_060b2389825a3092c6056ccc2dd6393b.setIcon(icon_7a9b43c968f0d02fa4906ac5b983f902);
+        
+    
+        var popup_35914a00892f62cf295c320491633a12 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d304ba1e273de16f215245c22ee7703 = $(`<div id="html_9d304ba1e273de16f215245c22ee7703" style="width: 100.0%; height: 100.0%;">     <b>Frick Collection</b><br>1 E 70th St, New York, NY 10021<br><i>Wed–Sun: 10 AM – 6 PM; Closed Mon–Tue</i><br>     <a href="https://www.frick.org/tickets" target="_blank">Buy Tickets</a>     </div>`)[0];
+            popup_35914a00892f62cf295c320491633a12.setContent(html_9d304ba1e273de16f215245c22ee7703);
+        
+
+        marker_060b2389825a3092c6056ccc2dd6393b.bindPopup(popup_35914a00892f62cf295c320491633a12)
+        ;
+
+        
+    
+    
+            var feature_group_36d60a1c7ba2d80eefc8e82f0321fc5c = L.featureGroup(
+                {}
+            ).addTo(map_8c7fff489c97086f58deaf141f8ae8a6);
+        
+    
+            var marker_7fbb63cc2df05ace8b0c65a3de5a3e79 = L.marker(
+                [40.7176, -73.9953],
+                {}
+            ).addTo(feature_group_36d60a1c7ba2d80eefc8e82f0321fc5c);
+        
+    
+            var icon_386804194ce11282aba2e9ddf39f4e4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7fbb63cc2df05ace8b0c65a3de5a3e79.setIcon(icon_386804194ce11282aba2e9ddf39f4e4b);
+        
+    
+        var popup_3be20956c5d19dfef51754fb06d7af2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7039f24ef3e1a6315e3b60fd122f6b3 = $(`<div id="html_c7039f24ef3e1a6315e3b60fd122f6b3" style="width: 100.0%; height: 100.0%;"><b>Potluck Club (Thu 8:15pm)</b><br>133 Chrystie St, New York, NY 10002<br><i>Reservation: Thursday at 8:15 PM</i></div>`)[0];
+            popup_3be20956c5d19dfef51754fb06d7af2d.setContent(html_c7039f24ef3e1a6315e3b60fd122f6b3);
+        
+
+        marker_7fbb63cc2df05ace8b0c65a3de5a3e79.bindPopup(popup_3be20956c5d19dfef51754fb06d7af2d)
+        ;
+
+        
+    
+    
+            var marker_04182d20bb817f61d53f6b8ad3c00a8c = L.marker(
+                [40.7204, -73.9921],
+                {}
+            ).addTo(feature_group_36d60a1c7ba2d80eefc8e82f0321fc5c);
+        
+    
+            var icon_ac5d74d2279a5cbf8ddd61716a34672a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_04182d20bb817f61d53f6b8ad3c00a8c.setIcon(icon_ac5d74d2279a5cbf8ddd61716a34672a);
+        
+    
+        var popup_2ba15ecf4bcc4c4e83cd002150363072 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf05d0197dd4359358f99f6951989711 = $(`<div id="html_bf05d0197dd4359358f99f6951989711" style="width: 100.0%; height: 100.0%;"><b>Freemans (Fri 7:00pm)</b><br>Freeman Alley, New York, NY 10002<br><i>Reservation: Friday at 7:00 PM</i></div>`)[0];
+            popup_2ba15ecf4bcc4c4e83cd002150363072.setContent(html_bf05d0197dd4359358f99f6951989711);
+        
+
+        marker_04182d20bb817f61d53f6b8ad3c00a8c.bindPopup(popup_2ba15ecf4bcc4c4e83cd002150363072)
+        ;
+
+        
+    
+    
+            var marker_ecff1e7f5c4d79f404ae1d5d7d4bcb91 = L.marker(
+                [40.7444, -73.9901],
+                {}
+            ).addTo(feature_group_36d60a1c7ba2d80eefc8e82f0321fc5c);
+        
+    
+            var icon_cc78d1a7e47851ea4d3721d7b04ed5c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ecff1e7f5c4d79f404ae1d5d7d4bcb91.setIcon(icon_cc78d1a7e47851ea4d3721d7b04ed5c1);
+        
+    
+        var popup_6912066393ea9175889787103e1ebbec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_479855ef7c82f4bd6ebfbdca0777c6c5 = $(`<div id="html_479855ef7c82f4bd6ebfbdca0777c6c5" style="width: 100.0%; height: 100.0%;"><b>Junoon (Sat 8:00pm)</b><br>19 W 24th St, New York, NY 10010<br><i>Reservation: Saturday at 8:00 PM</i></div>`)[0];
+            popup_6912066393ea9175889787103e1ebbec.setContent(html_479855ef7c82f4bd6ebfbdca0777c6c5);
+        
+
+        marker_ecff1e7f5c4d79f404ae1d5d7d4bcb91.bindPopup(popup_6912066393ea9175889787103e1ebbec)
+        ;
+
+        
+    
+    
+            var marker_c367bed252ad511493e71118b6302c8c = L.marker(
+                [40.6751, -73.9983],
+                {}
+            ).addTo(feature_group_36d60a1c7ba2d80eefc8e82f0321fc5c);
+        
+    
+            var icon_666355b7dfc4d79f6afc42cecd7bf8d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c367bed252ad511493e71118b6302c8c.setIcon(icon_666355b7dfc4d79f6afc42cecd7bf8d3);
+        
+    
+        var popup_bd1ff0ffdad8e02e1908e086945800d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41796b09ece7843f028844f8ff70d5de = $(`<div id="html_41796b09ece7843f028844f8ff70d5de" style="width: 100.0%; height: 100.0%;"><b>Frankie's Spuntino (Sun 8:00pm)</b><br>457 Court St, Brooklyn, NY 11231<br><i>Reservation: Sunday at 8:00 PM</i></div>`)[0];
+            popup_bd1ff0ffdad8e02e1908e086945800d8.setContent(html_41796b09ece7843f028844f8ff70d5de);
+        
+
+        marker_c367bed252ad511493e71118b6302c8c.bindPopup(popup_bd1ff0ffdad8e02e1908e086945800d8)
+        ;
+
+        
+    
+    
+            var feature_group_bd233e49e392387eef2d31ee265c34f6 = L.featureGroup(
+                {}
+            ).addTo(map_8c7fff489c97086f58deaf141f8ae8a6);
+        
+    
+            var marker_6ad26033c5b2773a9e2b437c0c8e7c3d = L.marker(
+                [40.7391, -74.0081],
+                {}
+            ).addTo(feature_group_bd233e49e392387eef2d31ee265c34f6);
+        
+    
+            var icon_8e5d89778235fcc704d0f442670adeaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_6ad26033c5b2773a9e2b437c0c8e7c3d.setIcon(icon_8e5d89778235fcc704d0f442670adeaf);
+        
+    
+        var popup_d229d5ddfb59c04a1c4278464d300d0b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36d82d4d6a02e87ef948e85c2043c2fe = $(`<div id="html_36d82d4d6a02e87ef948e85c2043c2fe" style="width: 100.0%; height: 100.0%;"><b>Museum of Art and Technology (Sat 9:45pm)</b><br>Fictional Location in Chelsea, New York, NY<br><i>Maestros and the Machines<br>Reservation: Saturday at 9:45 PM</i></div>`)[0];
+            popup_d229d5ddfb59c04a1c4278464d300d0b.setContent(html_36d82d4d6a02e87ef948e85c2043c2fe);
+        
+
+        marker_6ad26033c5b2773a9e2b437c0c8e7c3d.bindPopup(popup_d229d5ddfb59c04a1c4278464d300d0b)
+        ;
+
+        
+    
+    
+            var feature_group_ee9d6267aa9482ac3ec5f760edc50df4 = L.featureGroup(
+                {}
+            ).addTo(map_8c7fff489c97086f58deaf141f8ae8a6);
+        
+    
+            var marker_af1dd47d6b67d0531d32c2b9a4835ad8 = L.marker(
+                [40.7311, -73.9896],
+                {}
+            ).addTo(feature_group_ee9d6267aa9482ac3ec5f760edc50df4);
+        
+    
+            var icon_5855b4a5af79f314f4541ced825824f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_af1dd47d6b67d0531d32c2b9a4835ad8.setIcon(icon_5855b4a5af79f314f4541ced825824f0);
+        
+    
+        var popup_69165a5ec8680c19e784c4eba3abaf10 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_750dfe14b60b518fe0fbe9af1d61eafd = $(`<div id="html_750dfe14b60b518fe0fbe9af1d61eafd" style="width: 100.0%; height: 100.0%;">     <b>Amsterdam Billiards (East Village)</b><br>110 E 11th St, New York, NY 10003<br><i>Mon–Thu: 1 PM – 3 AM; Fri: 1 PM – 4 AM; Sat: 12 PM – 4 AM; Sun: 12 PM – 3 AM</i><br>     <a href="https://amsterdambilliards.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_69165a5ec8680c19e784c4eba3abaf10.setContent(html_750dfe14b60b518fe0fbe9af1d61eafd);
+        
+
+        marker_af1dd47d6b67d0531d32c2b9a4835ad8.bindPopup(popup_69165a5ec8680c19e784c4eba3abaf10)
+        ;
+
+        
+    
+    
+            var marker_b20d378152cf5dcb1149fb66ea72cb0a = L.marker(
+                [40.7376, -73.9897],
+                {}
+            ).addTo(feature_group_ee9d6267aa9482ac3ec5f760edc50df4);
+        
+    
+            var icon_8315c9c61023a10ff8106bf9c1f53c7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b20d378152cf5dcb1149fb66ea72cb0a.setIcon(icon_8315c9c61023a10ff8106bf9c1f53c7a);
+        
+    
+        var popup_934eca70aebac634c744a28320409f93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_540f562e9bdcfbc14e382aa93893d8c4 = $(`<div id="html_540f562e9bdcfbc14e382aa93893d8c4" style="width: 100.0%; height: 100.0%;">     <b>Amsterdam Billiards (Union Square)</b><br>34 E 17th St, New York, NY 10003<br><i>Check website for current hours</i><br>     <a href="https://amsterdambilliards.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_934eca70aebac634c744a28320409f93.setContent(html_540f562e9bdcfbc14e382aa93893d8c4);
+        
+
+        marker_b20d378152cf5dcb1149fb66ea72cb0a.bindPopup(popup_934eca70aebac634c744a28320409f93)
+        ;
+
+        
+    
+    
+            var marker_76efbe955877b4fbd51c56f7256dde38 = L.marker(
+                [40.7386, -73.9893],
+                {}
+            ).addTo(feature_group_ee9d6267aa9482ac3ec5f760edc50df4);
+        
+    
+            var icon_eba355e6d5a196458235ca3cf303e6ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_76efbe955877b4fbd51c56f7256dde38.setIcon(icon_eba355e6d5a196458235ca3cf303e6ea);
+        
+    
+        var popup_5a63ce775ae1aa5b5cc57421efb46193 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_242ab1e5d444eead468488f93efdbaa3 = $(`<div id="html_242ab1e5d444eead468488f93efdbaa3" style="width: 100.0%; height: 100.0%;">     <b>Society Billiards + Bar</b><br>10 E 21st St, New York, NY 10010<br><i>Mon–Thu: 1 PM – 3 AM; Fri: 1 PM – 4 AM; Sat: 12 PM – 4 AM; Sun: 12 PM – 3 AM</i><br>     <a href="https://societybilliards.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_5a63ce775ae1aa5b5cc57421efb46193.setContent(html_242ab1e5d444eead468488f93efdbaa3);
+        
+
+        marker_76efbe955877b4fbd51c56f7256dde38.bindPopup(popup_5a63ce775ae1aa5b5cc57421efb46193)
+        ;
+
+        
+    
+    
+            var marker_53a064aa4a88d91df0efc73cb7199ea9 = L.marker(
+                [40.7476, -73.9876],
+                {}
+            ).addTo(feature_group_ee9d6267aa9482ac3ec5f760edc50df4);
+        
+    
+            var icon_467e9707bb30fba6558696f1aca904b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_53a064aa4a88d91df0efc73cb7199ea9.setIcon(icon_467e9707bb30fba6558696f1aca904b7);
+        
+    
+        var popup_4e8c28f9fa9f9d3baeb02f23afa353ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_950017c3d8c29b1e0b3db8c22b64ceac = $(`<div id="html_950017c3d8c29b1e0b3db8c22b64ceac" style="width: 100.0%; height: 100.0%;">     <b>Space Billiard Pool Hall</b><br>34 W 32nd St, Floor 12, New York, NY 10001<br><i>Open daily, often until 3 AM or later</i><br>     <a href="https://spacebilliard.com/" target="_blank">Website</a>     </div>`)[0];
+            popup_4e8c28f9fa9f9d3baeb02f23afa353ff.setContent(html_950017c3d8c29b1e0b3db8c22b64ceac);
+        
+
+        marker_53a064aa4a88d91df0efc73cb7199ea9.bindPopup(popup_4e8c28f9fa9f9d3baeb02f23afa353ff)
+        ;
+
+        
+    
+    
+            var feature_group_393885cbca53bfb29e73d8f50da97ac6 = L.featureGroup(
+                {}
+            ).addTo(map_8c7fff489c97086f58deaf141f8ae8a6);
+        
+    
+            var marker_a4fa3f7ba824728f1b46303f57322e85 = L.marker(
+                [40.7295, -74.0005],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_643fd8bb28c37a9bca00838c99ff40ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_a4fa3f7ba824728f1b46303f57322e85.setIcon(icon_643fd8bb28c37a9bca00838c99ff40ea);
+        
+    
+        var popup_48ae92a7c13e4a89ae63c3e1af2b37b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04b5c9d2541c34c1c18cf253fd905f02 = $(`<div id="html_04b5c9d2541c34c1c18cf253fd905f02" style="width: 100.0%; height: 100.0%;">         <b>Generation Records</b><br>210 Thompson Street, New York, NY 10012<br><i>Mon–Sat: 11 AM – 8 PM; Sun: 12 PM – 7 PM</i><br>         <a href="https://www.generationrecords.com/" target="_blank">Website</a>         </div>`)[0];
+            popup_48ae92a7c13e4a89ae63c3e1af2b37b1.setContent(html_04b5c9d2541c34c1c18cf253fd905f02);
+        
+
+        marker_a4fa3f7ba824728f1b46303f57322e85.bindPopup(popup_48ae92a7c13e4a89ae63c3e1af2b37b1)
+        ;
+
+        
+    
+    
+            var marker_4d06f108fbd83182a409aea47a95027b = L.marker(
+                [40.7587, -73.9787],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_f1b1ba5c84fefd4199fc38e97c68b1c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_4d06f108fbd83182a409aea47a95027b.setIcon(icon_f1b1ba5c84fefd4199fc38e97c68b1c9);
+        
+    
+        var popup_beed9bffd818c7a993b0f3b32a182528 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2b671871ffeb674d3fd0cb1cb74c9c3 = $(`<div id="html_f2b671871ffeb674d3fd0cb1cb74c9c3" style="width: 100.0%; height: 100.0%;">         <b>Rough Trade NYC (Rockefeller Center)</b><br>30 Rockefeller Plaza, Concourse Level, New York, NY 10111<br><i>Mon–Sat: 10 AM – 8 PM; Sun: 11 AM – 7 PM</i><br>         <a href="https://www.roughtradenyc.com/" target="_blank">Website</a>         </div>`)[0];
+            popup_beed9bffd818c7a993b0f3b32a182528.setContent(html_f2b671871ffeb674d3fd0cb1cb74c9c3);
+        
+
+        marker_4d06f108fbd83182a409aea47a95027b.bindPopup(popup_beed9bffd818c7a993b0f3b32a182528)
+        ;
+
+        
+    
+    
+            var marker_c1b47cae92c631fd720af885d2482b2c = L.marker(
+                [40.7394, -73.9947],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_40cdc430bd0a88de1bc8b6b04652353e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_c1b47cae92c631fd720af885d2482b2c.setIcon(icon_40cdc430bd0a88de1bc8b6b04652353e);
+        
+    
+        var popup_3841087c6afc638d0d03d0160fcf5075 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3768825f3c306553574f64dd93070c2 = $(`<div id="html_d3768825f3c306553574f64dd93070c2" style="width: 100.0%; height: 100.0%;">         <b>Academy Records & CDs (East Village)</b><br>12 West 18th Street, New York, NY 10011<br><i>Mon–Sat: 11 AM – 8 PM; Sun: 12 PM – 7 PM</i><br>         <a href="https://academyrecords.com/" target="_blank">Website</a>         </div>`)[0];
+            popup_3841087c6afc638d0d03d0160fcf5075.setContent(html_d3768825f3c306553574f64dd93070c2);
+        
+
+        marker_c1b47cae92c631fd720af885d2482b2c.bindPopup(popup_3841087c6afc638d0d03d0160fcf5075)
+        ;
+
+        
+    
+    
+            var marker_e304f21dcdcd4d8ad0784ca1a2d50a96 = L.marker(
+                [40.7253, -73.9843],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_06317dc074e0a3f0d63262cb1c5b3787 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_e304f21dcdcd4d8ad0784ca1a2d50a96.setIcon(icon_06317dc074e0a3f0d63262cb1c5b3787);
+        
+    
+        var popup_ccaabfbe7a05773289fb4552d7dacf0a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f4d2b69ca8d566cfc1af45bb8e754236 = $(`<div id="html_f4d2b69ca8d566cfc1af45bb8e754236" style="width: 100.0%; height: 100.0%;">         <b>Stranded Records NYC</b><br>218 E 5th St, New York, NY 10003<br><i>Daily: 12 PM – 8 PM</i><br>         <a href="https://strandedrecords.com/pages/stranded-nyc" target="_blank">Website</a>         </div>`)[0];
+            popup_ccaabfbe7a05773289fb4552d7dacf0a.setContent(html_f4d2b69ca8d566cfc1af45bb8e754236);
+        
+
+        marker_e304f21dcdcd4d8ad0784ca1a2d50a96.bindPopup(popup_ccaabfbe7a05773289fb4552d7dacf0a)
+        ;
+
+        
+    
+    
+            var marker_117bbd50fcff0894276e5b03c7789655 = L.marker(
+                [40.7293, -74.0026],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_e3bfdcb5ea89d2e846435216ac78c39b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_117bbd50fcff0894276e5b03c7789655.setIcon(icon_e3bfdcb5ea89d2e846435216ac78c39b);
+        
+    
+        var popup_3d83c17ed84bd5caf6580cbfa7e021e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a98dac7159b4cd64377500379bf3a6dc = $(`<div id="html_a98dac7159b4cd64377500379bf3a6dc" style="width: 100.0%; height: 100.0%;">         <b>Village Revival Records</b><br>136 Bleecker St, New York, NY 10012<br><i>Mon–Sat: 12 PM – 8 PM; Sun: 1 PM – 7 PM</i><br>         <a href="https://villagerevivalrecords.com/" target="_blank">Website</a>         </div>`)[0];
+            popup_3d83c17ed84bd5caf6580cbfa7e021e8.setContent(html_a98dac7159b4cd64377500379bf3a6dc);
+        
+
+        marker_117bbd50fcff0894276e5b03c7789655.bindPopup(popup_3d83c17ed84bd5caf6580cbfa7e021e8)
+        ;
+
+        
+    
+    
+            var marker_0d1509c941f349cb8c039be5fc77f786 = L.marker(
+                [40.7793, -73.9832],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_0ef70672eeeb0f52161edb64df3e8bc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_0d1509c941f349cb8c039be5fc77f786.setIcon(icon_0ef70672eeeb0f52161edb64df3e8bc2);
+        
+    
+        var popup_b3b3b424f98537778dc7a6865417337e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37a41beee6e303f40e0db13759ecf77f = $(`<div id="html_37a41beee6e303f40e0db13759ecf77f" style="width: 100.0%; height: 100.0%;">         <b>Westsider Records</b><br>233 W 72nd St, New York, NY 10023<br><i>Mon–Sat: 11 AM – 8 PM; Sun: 12 PM – 7 PM</i><br>         <a href="https://www.westsiderrecords.com/" target="_blank">Website</a>         </div>`)[0];
+            popup_b3b3b424f98537778dc7a6865417337e.setContent(html_37a41beee6e303f40e0db13759ecf77f);
+        
+
+        marker_0d1509c941f349cb8c039be5fc77f786.bindPopup(popup_b3b3b424f98537778dc7a6865417337e)
+        ;
+
+        
+    
+    
+            var marker_873ce7981a662c68ef3c75c4d783cda5 = L.marker(
+                [40.7268, -73.9835],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_daa41afed0a2ae15b63f1ac5e1917993 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_873ce7981a662c68ef3c75c4d783cda5.setIcon(icon_daa41afed0a2ae15b63f1ac5e1917993);
+        
+    
+        var popup_a38d6c93f734f29b4f4954a1de65bd92 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fd6f071671f551e9c8884e6336f9f53 = $(`<div id="html_0fd6f071671f551e9c8884e6336f9f53" style="width: 100.0%; height: 100.0%;">         <b>A-1 Records</b><br>439 E 6th St, New York, NY 10009<br><i>Mon–Sat: 12 PM – 7 PM; Sun: 1 PM – 6 PM</i><br>         <a href="https://a-1records.com/" target="_blank">Website</a>         </div>`)[0];
+            popup_a38d6c93f734f29b4f4954a1de65bd92.setContent(html_0fd6f071671f551e9c8884e6336f9f53);
+        
+
+        marker_873ce7981a662c68ef3c75c4d783cda5.bindPopup(popup_a38d6c93f734f29b4f4954a1de65bd92)
+        ;
+
+        
+    
+    
+            var marker_f746b45f9c2cb4f1f4b28e9ff93d4cf8 = L.marker(
+                [40.7472, -73.9957],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_0166f04c7f795c856ce19d32fce5c55a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_f746b45f9c2cb4f1f4b28e9ff93d4cf8.setIcon(icon_0166f04c7f795c856ce19d32fce5c55a);
+        
+    
+        var popup_0873d1ce97e78ae9e6464628aba49dc3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a238fdd6a347ba7199ecea2e8ac0b482 = $(`<div id="html_a238fdd6a347ba7199ecea2e8ac0b482" style="width: 100.0%; height: 100.0%;">         <b>Jazz Record Center</b><br>236 W 26th St, Floor 5, New York, NY 10001<br><i>Tue–Sat: 10 AM – 6 PM; Closed Sun & Mon</i><br>         <a href="http://www.jazzrecordcenter.com/" target="_blank">Website</a>         </div>`)[0];
+            popup_0873d1ce97e78ae9e6464628aba49dc3.setContent(html_a238fdd6a347ba7199ecea2e8ac0b482);
+        
+
+        marker_f746b45f9c2cb4f1f4b28e9ff93d4cf8.bindPopup(popup_0873d1ce97e78ae9e6464628aba49dc3)
+        ;
+
+        
+    
+    
+            var marker_1d5786196d5f60079069781690e68184 = L.marker(
+                [40.7125, -73.9931],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_2a959f50c3d46f0b34bd2938e96602a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_1d5786196d5f60079069781690e68184.setIcon(icon_2a959f50c3d46f0b34bd2938e96602a7);
+        
+    
+        var popup_d0c5c76f05929f0efaaf40d614642b85 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c258a6b7b456a06f70fc2d393f048d3 = $(`<div id="html_7c258a6b7b456a06f70fc2d393f048d3" style="width: 100.0%; height: 100.0%;">         <b>Downtown Music Gallery</b><br>13 Monroe St, New York, NY 10002<br><i>Mon–Fri: 12 PM – 7 PM; Sat: 12 PM – 6 PM; Closed Sun</i><br>         <a href="http://www.downtownmusicgallery.com/" target="_blank">Website</a>         </div>`)[0];
+            popup_d0c5c76f05929f0efaaf40d614642b85.setContent(html_7c258a6b7b456a06f70fc2d393f048d3);
+        
+
+        marker_1d5786196d5f60079069781690e68184.bindPopup(popup_d0c5c76f05929f0efaaf40d614642b85)
+        ;
+
+        
+    
+    
+            var marker_4f512fdac125ae5f7ec84b8ad51d9f17 = L.marker(
+                [40.7325, -74.0021],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_f9a7615ccc0bdb8a62c3bcbcd46661da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_4f512fdac125ae5f7ec84b8ad51d9f17.setIcon(icon_f9a7615ccc0bdb8a62c3bcbcd46661da);
+        
+    
+        var popup_11565c7a2c4334e2df55252406b24330 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c0a971b86994803de48e2ac64ddde9f = $(`<div id="html_1c0a971b86994803de48e2ac64ddde9f" style="width: 100.0%; height: 100.0%;">         <b>Record Runner</b><br>5 Jones St, New York, NY 10014<br><i>Mon–Sat: 11 AM – 8 PM; Sun: 12 PM – 7 PM</i><br>         <a href="https://www.recordrunnernyc.com/" target="_blank">Website</a>         </div>`)[0];
+            popup_11565c7a2c4334e2df55252406b24330.setContent(html_1c0a971b86994803de48e2ac64ddde9f);
+        
+
+        marker_4f512fdac125ae5f7ec84b8ad51d9f17.bindPopup(popup_11565c7a2c4334e2df55252406b24330)
+        ;
+
+        
+    
+    
+            var marker_ff4ff0096b722cd7de5de670e43c1bc7 = L.marker(
+                [40.7297, -73.9554],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_535ac7101ebc675913df62ce1fdfa335 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_ff4ff0096b722cd7de5de670e43c1bc7.setIcon(icon_535ac7101ebc675913df62ce1fdfa335);
+        
+    
+        var popup_a7bc13902603b6b118627f5bb1556688 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23473e68f7db8391d434f636e06d67a5 = $(`<div id="html_23473e68f7db8391d434f636e06d67a5" style="width: 100.0%; height: 100.0%;">         <b>Academy Record Annex (Brooklyn)</b><br>85 Oak St, Brooklyn, NY 11222<br><i>Daily: 12 PM – 7 PM</i><br>         <a href="https://academyrecords.com/" target="_blank">Website</a>         </div>`)[0];
+            popup_a7bc13902603b6b118627f5bb1556688.setContent(html_23473e68f7db8391d434f636e06d67a5);
+        
+
+        marker_ff4ff0096b722cd7de5de670e43c1bc7.bindPopup(popup_a7bc13902603b6b118627f5bb1556688)
+        ;
+
+        
+    
+    
+            var marker_f136decb590a9ffd7d2c0447bc0024fc = L.marker(
+                [40.7258, -73.9558],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_e3b23e504f9efd2d943b69c80fd068f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_f136decb590a9ffd7d2c0447bc0024fc.setIcon(icon_e3b23e504f9efd2d943b69c80fd068f7);
+        
+    
+        var popup_bfe550d34737dd6cae52d0fc0c8a2c57 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_feed400b80b3a390dd31042a8f8f6f31 = $(`<div id="html_feed400b80b3a390dd31042a8f8f6f31" style="width: 100.0%; height: 100.0%;">         <b>Brooklyn Record Exchange</b><br>87 Guernsey St, Brooklyn, NY 11222<br><i>Daily: 12 PM – 7 PM</i><br>         <a href="https://brooklynrecordexchange.com/" target="_blank">Website</a>         </div>`)[0];
+            popup_bfe550d34737dd6cae52d0fc0c8a2c57.setContent(html_feed400b80b3a390dd31042a8f8f6f31);
+        
+
+        marker_f136decb590a9ffd7d2c0447bc0024fc.bindPopup(popup_bfe550d34737dd6cae52d0fc0c8a2c57)
+        ;
+
+        
+    
+    
+            var marker_cb5d2239a673c98b2bd61546b04353ea = L.marker(
+                [40.7066, -73.9369],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_2e4b29a4389a952df4164a012484d5c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_cb5d2239a673c98b2bd61546b04353ea.setIcon(icon_2e4b29a4389a952df4164a012484d5c6);
+        
+    
+        var popup_9cc72b69f90b836cfd8a620b47cf6575 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e048b3dcce4cd05e2d11bb2ea8056784 = $(`<div id="html_e048b3dcce4cd05e2d11bb2ea8056784" style="width: 100.0%; height: 100.0%;">         <b>Human Head Records</b><br>168 Johnson Ave, Brooklyn, NY 11206<br><i>Daily: 12 PM – 7 PM</i><br>         <a href="https://www.humanheadnyc.com/" target="_blank">Website</a>         </div>`)[0];
+            popup_9cc72b69f90b836cfd8a620b47cf6575.setContent(html_e048b3dcce4cd05e2d11bb2ea8056784);
+        
+
+        marker_cb5d2239a673c98b2bd61546b04353ea.bindPopup(popup_9cc72b69f90b836cfd8a620b47cf6575)
+        ;
+
+        
+    
+    
+            var marker_aff5b7fdf580faba0afc5f557d90c76f = L.marker(
+                [40.7291, -73.9532],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_f7e74eb822f7e2842eec24fd5602edd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_aff5b7fdf580faba0afc5f557d90c76f.setIcon(icon_f7e74eb822f7e2842eec24fd5602edd2);
+        
+    
+        var popup_d5772fe47167dde5e1e220f9323555ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5065804276bd07b2b2af0d040158927a = $(`<div id="html_5065804276bd07b2b2af0d040158927a" style="width: 100.0%; height: 100.0%;">         <b>Captured Tracks Shop</b><br>195 Calyer St, Brooklyn, NY 11222<br><i>Wed–Sun: 12 PM – 7 PM; Closed Mon–Tue</i><br>         <a href="https://shop.capturedtracks.com/" target="_blank">Website</a>         </div>`)[0];
+            popup_d5772fe47167dde5e1e220f9323555ac.setContent(html_5065804276bd07b2b2af0d040158927a);
+        
+
+        marker_aff5b7fdf580faba0afc5f557d90c76f.bindPopup(popup_d5772fe47167dde5e1e220f9323555ac)
+        ;
+
+        
+    
+    
+            var marker_1b53ad29c68a6c6fb376d87d27fefe86 = L.marker(
+                [40.7146, -73.9644],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_83510baf03920d85960edc4877e968fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_1b53ad29c68a6c6fb376d87d27fefe86.setIcon(icon_83510baf03920d85960edc4877e968fa);
+        
+    
+        var popup_7d0e82a7939d03acf4c43721910e7a97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b549f7d3576bb5ff43b26962d0df952 = $(`<div id="html_4b549f7d3576bb5ff43b26962d0df952" style="width: 100.0%; height: 100.0%;">         <b>Superior Elevation Records</b><br>103 Metropolitan Ave, Brooklyn, NY 11249<br><i>Daily: 12 PM – 8 PM</i><br>         <a href="https://superiorelevation.com/" target="_blank">Website</a>         </div>`)[0];
+            popup_7d0e82a7939d03acf4c43721910e7a97.setContent(html_4b549f7d3576bb5ff43b26962d0df952);
+        
+
+        marker_1b53ad29c68a6c6fb376d87d27fefe86.bindPopup(popup_7d0e82a7939d03acf4c43721910e7a97)
+        ;
+
+        
+    
+    
+            var marker_5465f0e989d924df8db18aebb3d57e15 = L.marker(
+                [40.7059, -73.9219],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_bfc6f892be0c0f2ec39151f7536e1d46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_5465f0e989d924df8db18aebb3d57e15.setIcon(icon_bfc6f892be0c0f2ec39151f7536e1d46);
+        
+    
+        var popup_f7c507c86235442a494f28da9689f614 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_469a1b2ff13a9650322f34fcf861855e = $(`<div id="html_469a1b2ff13a9650322f34fcf861855e" style="width: 100.0%; height: 100.0%;">         <b>Vinyl Fantasy</b><br>599 Johnson Ave, Brooklyn, NY 11237<br><i>Daily: 12 PM – 7 PM</i><br>         <a href="https://www.instagram.com/vinylfantasybk/" target="_blank">Website</a>         </div>`)[0];
+            popup_f7c507c86235442a494f28da9689f614.setContent(html_469a1b2ff13a9650322f34fcf861855e);
+        
+
+        marker_5465f0e989d924df8db18aebb3d57e15.bindPopup(popup_f7c507c86235442a494f28da9689f614)
+        ;
+
+        
+    
+    
+            var marker_1e2f85405e207df021344744376a498f = L.marker(
+                [40.7643, -73.9147],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_8cf9b374dd867eb58747c5d13bd77ba7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_1e2f85405e207df021344744376a498f.setIcon(icon_8cf9b374dd867eb58747c5d13bd77ba7);
+        
+    
+        var popup_9299f4a5ba05d372d76c0b4ac22e7928 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e29d7c1e84abceae8013fe616a6bfaaf = $(`<div id="html_e29d7c1e84abceae8013fe616a6bfaaf" style="width: 100.0%; height: 100.0%;">         <b>Pancakes Records</b><br>35-03 30th Ave, Astoria, NY 11103<br><i>Daily: 11 AM – 8 PM</i><br>         <a href="https://www.instagram.com/pancakesrecords/" target="_blank">Website</a>         </div>`)[0];
+            popup_9299f4a5ba05d372d76c0b4ac22e7928.setContent(html_e29d7c1e84abceae8013fe616a6bfaaf);
+        
+
+        marker_1e2f85405e207df021344744376a498f.bindPopup(popup_9299f4a5ba05d372d76c0b4ac22e7928)
+        ;
+
+        
+    
+    
+            var marker_057d2b598fd914ba0f1e207e5c8c4913 = L.marker(
+                [40.8626, -73.891],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_91e2e668ed9014b5e46b7de9cf50695c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_057d2b598fd914ba0f1e207e5c8c4913.setIcon(icon_91e2e668ed9014b5e46b7de9cf50695c);
+        
+    
+        var popup_1a0c8e74432cca0235080aba06e3651b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23f0afa60a53ee1f58823fd34943c593 = $(`<div id="html_23f0afa60a53ee1f58823fd34943c593" style="width: 100.0%; height: 100.0%;">         <b>Bronx River Records</b><br>303 Fordham Rd, Bronx, NY 10458<br><i>Mon–Sat: 11 AM – 7 PM; Sun: 12 PM – 6 PM</i><br>         <a href="https://www.instagram.com/bronxriverrecords/" target="_blank">Website</a>         </div>`)[0];
+            popup_1a0c8e74432cca0235080aba06e3651b.setContent(html_23f0afa60a53ee1f58823fd34943c593);
+        
+
+        marker_057d2b598fd914ba0f1e207e5c8c4913.bindPopup(popup_1a0c8e74432cca0235080aba06e3651b)
+        ;
+
+        
+    
+    
+            var marker_a740019eb746a323b68e74cdabd59620 = L.marker(
+                [40.6295, -74.1153],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_d033899585f4413814d463dfa56897b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_a740019eb746a323b68e74cdabd59620.setIcon(icon_d033899585f4413814d463dfa56897b1);
+        
+    
+        var popup_5e8b96a025369504982623c3c1f64e42 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f28aca21d235ba20b668afb0f8680c0d = $(`<div id="html_f28aca21d235ba20b668afb0f8680c0d" style="width: 100.0%; height: 100.0%;">         <b>Looney Tunes (Staten Island)</b><br>317 Forest Ave, Staten Island, NY 10301<br><i>Mon–Sat: 10 AM – 7 PM; Sun: 12 PM – 5 PM</i><br>         <a href="https://www.looneytunescds.com/" target="_blank">Website</a>         </div>`)[0];
+            popup_5e8b96a025369504982623c3c1f64e42.setContent(html_f28aca21d235ba20b668afb0f8680c0d);
+        
+
+        marker_a740019eb746a323b68e74cdabd59620.bindPopup(popup_5e8b96a025369504982623c3c1f64e42)
+        ;
+
+        
+    
+    
+            var marker_2a0678b30b46c697adb51849d381acde = L.marker(
+                [40.7275, -73.9819],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_dfe28aec6bb56e3fffdea5fba9dce896 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_2a0678b30b46c697adb51849d381acde.setIcon(icon_dfe28aec6bb56e3fffdea5fba9dce896);
+        
+    
+        var popup_3ccad2f2880976ba346f68ac7a190ec0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9f83a95697031cb1e18812e6d8a5d03 = $(`<div id="html_e9f83a95697031cb1e18812e6d8a5d03" style="width: 100.0%; height: 100.0%;">         <b>Material World</b><br>171 Avenue A, New York, NY 10009<br><i>Daily: 12 PM – 8 PM</i><br>         <a href="https://www.materialworldnyc.com/" target="_blank">Website</a>         </div>`)[0];
+            popup_3ccad2f2880976ba346f68ac7a190ec0.setContent(html_e9f83a95697031cb1e18812e6d8a5d03);
+        
+
+        marker_2a0678b30b46c697adb51849d381acde.bindPopup(popup_3ccad2f2880976ba346f68ac7a190ec0)
+        ;
+
+        
+    
+    
+            var marker_7cfee925a8ddff2eea5fca2a75fa6337 = L.marker(
+                [40.7324, -73.9548],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_763cd05d9d80e84928033cc6d9c8692a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_7cfee925a8ddff2eea5fca2a75fa6337.setIcon(icon_763cd05d9d80e84928033cc6d9c8692a);
+        
+    
+        var popup_6921dd3d05045d5ac90010692ed98fd2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a035fad5e58d51899a997c336f179849 = $(`<div id="html_a035fad5e58d51899a997c336f179849" style="width: 100.0%; height: 100.0%;">         <b>Record Grouch</b><br>986 Manhattan Ave, Brooklyn, NY 11222<br><i>Daily: 12 PM – 7 PM</i><br>         <a href="https://www.recordgrouch.com/" target="_blank">Website</a>         </div>`)[0];
+            popup_6921dd3d05045d5ac90010692ed98fd2.setContent(html_a035fad5e58d51899a997c336f179849);
+        
+
+        marker_7cfee925a8ddff2eea5fca2a75fa6337.bindPopup(popup_6921dd3d05045d5ac90010692ed98fd2)
+        ;
+
+        
+    
+    
+            var marker_fe0a9e6e20f854bb15280d1fda0dc41b = L.marker(
+                [40.7316, -73.9547],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_e3d707b0ddf265444a6c96b9128243f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_fe0a9e6e20f854bb15280d1fda0dc41b.setIcon(icon_e3d707b0ddf265444a6c96b9128243f6);
+        
+    
+        var popup_91a7da940c4117657c668d0b454143da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9914f8ecd505ab975686067e3439e8a = $(`<div id="html_a9914f8ecd505ab975686067e3439e8a" style="width: 100.0%; height: 100.0%;">         <b>Vinyl Index</b><br>149 Greenpoint Ave, Brooklyn, NY 11222<br><i>Daily: 12 PM – 7 PM</i><br>         <a href="https://www.instagram.com/vinylindex/" target="_blank">Website</a>         </div>`)[0];
+            popup_91a7da940c4117657c668d0b454143da.setContent(html_a9914f8ecd505ab975686067e3439e8a);
+        
+
+        marker_fe0a9e6e20f854bb15280d1fda0dc41b.bindPopup(popup_91a7da940c4117657c668d0b454143da)
+        ;
+
+        
+    
+    
+            var marker_a496d157e7c71a2e03a067a29da64652 = L.marker(
+                [40.7296, -73.9546],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_3470dfaf62c40471a10336f9c7d07b43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_a496d157e7c71a2e03a067a29da64652.setIcon(icon_3470dfaf62c40471a10336f9c7d07b43);
+        
+    
+        var popup_d8e5a566f96f4b4b39d4eef39b7f7894 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bacf9f44e9ab2203547b0c3e1806221e = $(`<div id="html_bacf9f44e9ab2203547b0c3e1806221e" style="width: 100.0%; height: 100.0%;">         <b>Irangi Vaa Records</b><br>78 India St, Brooklyn, NY 11222<br><i>Wed–Sun: 1 PM – 7 PM; Closed Mon–Tue</i><br>         <a href="https://www.instagram.com/irangivaarecords/" target="_blank">Website</a>         </div>`)[0];
+            popup_d8e5a566f96f4b4b39d4eef39b7f7894.setContent(html_bacf9f44e9ab2203547b0c3e1806221e);
+        
+
+        marker_a496d157e7c71a2e03a067a29da64652.bindPopup(popup_d8e5a566f96f4b4b39d4eef39b7f7894)
+        ;
+
+        
+    
+    
+            var marker_a097d78058dea11baeb8c2a97a36f073 = L.marker(
+                [40.7051, -73.9235],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_88e2d8122ef26eae77361bc8e25a9a55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_a097d78058dea11baeb8c2a97a36f073.setIcon(icon_88e2d8122ef26eae77361bc8e25a9a55);
+        
+    
+        var popup_275e91a86b8d620ac0ce0c0c3205b35a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e32bd47283dfdcbf5b7e037d62f46c9 = $(`<div id="html_2e32bd47283dfdcbf5b7e037d62f46c9" style="width: 100.0%; height: 100.0%;">         <b>Deep Grooves Records</b><br>63 Scott Ave, Brooklyn, NY 11237<br><i>Fri–Sun: 1 PM – 7 PM</i><br>         <a href="https://www.instagram.com/deepgroovesrecords/" target="_blank">Website</a>         </div>`)[0];
+            popup_275e91a86b8d620ac0ce0c0c3205b35a.setContent(html_2e32bd47283dfdcbf5b7e037d62f46c9);
+        
+
+        marker_a097d78058dea11baeb8c2a97a36f073.bindPopup(popup_275e91a86b8d620ac0ce0c0c3205b35a)
+        ;
+
+        
+    
+    
+            var marker_51f5305bd15b907f54d25429320466aa = L.marker(
+                [40.7253, -73.8582],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_71136d716312dd4ad191eb448347cab9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_51f5305bd15b907f54d25429320466aa.setIcon(icon_71136d716312dd4ad191eb448347cab9);
+        
+    
+        var popup_7f0fa35a2cbc923b61825eaddca7aad2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_beef4ac6ea1e06d8224f6a83d0c2cf19 = $(`<div id="html_beef4ac6ea1e06d8224f6a83d0c2cf19" style="width: 100.0%; height: 100.0%;">         <b>Rockaway Records NYC</b><br>63-97 98th Pl, Rego Park, NY 11374<br><i>Mon–Sat: 11 AM – 8 PM; Sun: 12 PM – 6 PM</i><br>         <a href="https://www.rockaway.com/" target="_blank">Website</a>         </div>`)[0];
+            popup_7f0fa35a2cbc923b61825eaddca7aad2.setContent(html_beef4ac6ea1e06d8224f6a83d0c2cf19);
+        
+
+        marker_51f5305bd15b907f54d25429320466aa.bindPopup(popup_7f0fa35a2cbc923b61825eaddca7aad2)
+        ;
+
+        
+    
+    
+            var marker_a4a9ef2f2cbbdb1b2e09288d3e85cde1 = L.marker(
+                [40.8597, -73.8882],
+                {}
+            ).addTo(feature_group_393885cbca53bfb29e73d8f50da97ac6);
+        
+    
+            var icon_53930b75713c5761915cb4ed81e2b7bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_a4a9ef2f2cbbdb1b2e09288d3e85cde1.setIcon(icon_53930b75713c5761915cb4ed81e2b7bb);
+        
+    
+        var popup_a8fc838d3fc82a691e5a042d7733fcee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1aab9b00c122982a6df2b8dddc5f25a4 = $(`<div id="html_1aab9b00c122982a6df2b8dddc5f25a4" style="width: 100.0%; height: 100.0%;">         <b>The Record Shop (Bronx)</b><br>2520 Webster Ave, Bronx, NY 10458<br><i>Tue–Sat: 12 PM – 7 PM; Closed Sun–Mon</i><br>         <a href="https://www.instagram.com/therecordshopbronx/" target="_blank">Website</a>         </div>`)[0];
+            popup_a8fc838d3fc82a691e5a042d7733fcee.setContent(html_1aab9b00c122982a6df2b8dddc5f25a4);
+        
+
+        marker_a4a9ef2f2cbbdb1b2e09288d3e85cde1.bindPopup(popup_a8fc838d3fc82a691e5a042d7733fcee)
+        ;
+
+        
+    
+    
+            var feature_group_345c8e3aea2f3f5d82a3dc6626bfe370 = L.featureGroup(
+                {}
+            ).addTo(map_8c7fff489c97086f58deaf141f8ae8a6);
+        
+    
+            var marker_39ca9474ba76be75d8b3b514590399fc = L.marker(
+                [40.7333, -73.9903],
+                {}
+            ).addTo(feature_group_345c8e3aea2f3f5d82a3dc6626bfe370);
+        
+    
+            var icon_0d420c39b4682677283980874d05ba2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_39ca9474ba76be75d8b3b514590399fc.setIcon(icon_0d420c39b4682677283980874d05ba2c);
+        
+    
+        var popup_b726b2adcb9f9aa66cf111c3fe2eeb9e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3e830ded80cb4e93681b388c4eda137 = $(`<div id="html_e3e830ded80cb4e93681b388c4eda137" style="width: 100.0%; height: 100.0%;">         <b>Strand Book Store</b><br>828 Broadway, New York, NY 10003<br><i>Daily: 10 AM – 10 PM</i><br>         <a href="https://www.strandbooks.com/" target="_blank">Website</a>         </div>`)[0];
+            popup_b726b2adcb9f9aa66cf111c3fe2eeb9e.setContent(html_e3e830ded80cb4e93681b388c4eda137);
+        
+
+        marker_39ca9474ba76be75d8b3b514590399fc.bindPopup(popup_b726b2adcb9f9aa66cf111c3fe2eeb9e)
+        ;
+
+        
+    
+    
+            var marker_92b242cf74f762618464fcf44faa81e3 = L.marker(
+                [40.7335, -73.9902],
+                {}
+            ).addTo(feature_group_345c8e3aea2f3f5d82a3dc6626bfe370);
+        
+    
+            var icon_8b83a9e0458b0f6204e8c888ae1e0a76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_92b242cf74f762618464fcf44faa81e3.setIcon(icon_8b83a9e0458b0f6204e8c888ae1e0a76);
+        
+    
+        var popup_a10906309bdfe5cbc5883ec879d6010a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79d64f8ce906ff92f4639e3b6b0bdfb1 = $(`<div id="html_79d64f8ce906ff92f4639e3b6b0bdfb1" style="width: 100.0%; height: 100.0%;">         <b>Forbidden Planet</b><br>832 Broadway, New York, NY 10003<br><i>Mon–Sat: 11 AM – 8 PM; Sun: 12 PM – 7 PM</i><br>         <a href="https://forbiddenplanet.com/stores/forbidden-planet-nyc/" target="_blank">Website</a>         </div>`)[0];
+            popup_a10906309bdfe5cbc5883ec879d6010a.setContent(html_79d64f8ce906ff92f4639e3b6b0bdfb1);
+        
+
+        marker_92b242cf74f762618464fcf44faa81e3.bindPopup(popup_a10906309bdfe5cbc5883ec879d6010a)
+        ;
+
+        
+    
+    
+            var marker_ffae88edd333574561c58959a7349fd9 = L.marker(
+                [40.7158, -74.0101],
+                {}
+            ).addTo(feature_group_345c8e3aea2f3f5d82a3dc6626bfe370);
+        
+    
+            var icon_5149d9fffdf570f61d6721a41c6e50ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_ffae88edd333574561c58959a7349fd9.setIcon(icon_5149d9fffdf570f61d6721a41c6e50ff);
+        
+    
+        var popup_16b5972ede45639d21f7ed8b35def2df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d88b01fa03ffb8f8b2f67b5410cd8aaa = $(`<div id="html_d88b01fa03ffb8f8b2f67b5410cd8aaa" style="width: 100.0%; height: 100.0%;">         <b>Mysterious Bookshop</b><br>58 Warren St, New York, NY 10007<br><i>Mon–Fri: 11 AM – 7 PM; Sat: 11 AM – 6 PM; Closed Sun</i><br>         <a href="https://www.mysteriousbookshop.com/" target="_blank">Website</a>         </div>`)[0];
+            popup_16b5972ede45639d21f7ed8b35def2df.setContent(html_d88b01fa03ffb8f8b2f67b5410cd8aaa);
+        
+
+        marker_ffae88edd333574561c58959a7349fd9.bindPopup(popup_16b5972ede45639d21f7ed8b35def2df)
+        ;
+
+        
+    
+    
+            var feature_group_3c9c13eae1e92b56cf78cb92687de437 = L.featureGroup(
+                {}
+            ).addTo(map_8c7fff489c97086f58deaf141f8ae8a6);
+        
+    
+            var marker_d8448ee1f291bb2120bc97a9d9d6d2a6 = L.marker(
+                [40.7673, -73.9819],
+                {}
+            ).addTo(feature_group_3c9c13eae1e92b56cf78cb92687de437);
+        
+    
+            var icon_2f675201be179ebb270db070ad554c75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d8448ee1f291bb2120bc97a9d9d6d2a6.setIcon(icon_2f675201be179ebb270db070ad554c75);
+        
+    
+        var popup_6e819f87ed365cc567a2c65d904262d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be670bcdfee530fc630377f5c13033b1 = $(`<div id="html_be670bcdfee530fc630377f5c13033b1" style="width: 100.0%; height: 100.0%;"><b>6 Columbus Central Park Hotel</b><br>308 W 58th St, New York, NY 10019</div>`)[0];
+            popup_6e819f87ed365cc567a2c65d904262d1.setContent(html_be670bcdfee530fc630377f5c13033b1);
+        
+
+        marker_d8448ee1f291bb2120bc97a9d9d6d2a6.bindPopup(popup_6e819f87ed365cc567a2c65d904262d1)
+        ;
+
+        
+    
+    
+            var layer_control_b220ee0beab77c9fc20af0cbb8a7ab4c = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_4b05aa4f0ff2915311058c93c4741847,
+                },
+                overlays :  {
+                    "Breakfast Spots" : feature_group_7d7a6ceec834d8f5bf7a2b8d116fa018,
+                    "Museums" : feature_group_d6e769735fee3bc6ca6412f5616e10bc,
+                    "Dinner Spots" : feature_group_36d60a1c7ba2d80eefc8e82f0321fc5c,
+                    "Events" : feature_group_bd233e49e392387eef2d31ee265c34f6,
+                    "Pool Halls" : feature_group_ee9d6267aa9482ac3ec5f760edc50df4,
+                    "Record Shops" : feature_group_393885cbca53bfb29e73d8f50da97ac6,
+                    "Bookstores" : feature_group_345c8e3aea2f3f5d82a3dc6626bfe370,
+                    "Hotel" : feature_group_3c9c13eae1e92b56cf78cb92687de437,
+                },
+            };
+            L.control.layers(
+                layer_control_b220ee0beab77c9fc20af0cbb8a7ab4c.base_layers,
+                layer_control_b220ee0beab77c9fc20af0cbb8a7ab4c.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_8c7fff489c97086f58deaf141f8ae8a6);
+        
+</script>
+</html>
