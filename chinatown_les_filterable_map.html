@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e9467f74599982c9e9dd733f5a7e4b11 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e9467f74599982c9e9dd733f5a7e4b11" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e9467f74599982c9e9dd733f5a7e4b11 = L.map(
+                "map_e9467f74599982c9e9dd733f5a7e4b11",
+                {
+                    center: [40.7178, -73.9901],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_74fbfcf63421e5bf50ac16373dfb7152 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e9467f74599982c9e9dd733f5a7e4b11);
+        
+    
+            var feature_group_1052928b5668456c5de0a418cdaaea50 = L.featureGroup(
+                {}
+            ).addTo(map_e9467f74599982c9e9dd733f5a7e4b11);
+        
+    
+            var marker_ad96c6905222766122a8830aeea7180b = L.marker(
+                [40.7146, -73.9925],
+                {}
+            ).addTo(feature_group_1052928b5668456c5de0a418cdaaea50);
+        
+    
+            var icon_95759bc30f12cc5d11d5035cadc77371 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ad96c6905222766122a8830aeea7180b.setIcon(icon_95759bc30f12cc5d11d5035cadc77371);
+        
+    
+        var popup_51cdc7e35beb93ae033084549b897e0c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8235308b2ef618ed7d631bf3af36388a = $(`<div id="html_8235308b2ef618ed7d631bf3af36388a" style="width: 100.0%; height: 100.0%;"><b>EUROPA Gallery</b><br>125 Division St, 2nd Fl<br>Thu–Sat, 12–6PM<br><a href='https://www.europa.nyc/' target='_blank'>Website</a></div>`)[0];
+            popup_51cdc7e35beb93ae033084549b897e0c.setContent(html_8235308b2ef618ed7d631bf3af36388a);
+        
+
+        marker_ad96c6905222766122a8830aeea7180b.bindPopup(popup_51cdc7e35beb93ae033084549b897e0c)
+        ;
+
+        
+    
+    
+            var marker_1dd33ef1d7397838c2edc4ab0965c800 = L.marker(
+                [40.7204, -73.9864],
+                {}
+            ).addTo(feature_group_1052928b5668456c5de0a418cdaaea50);
+        
+    
+            var icon_a374c39d9d77d9a6c1240c84cbe782fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1dd33ef1d7397838c2edc4ab0965c800.setIcon(icon_a374c39d9d77d9a6c1240c84cbe782fc);
+        
+    
+        var popup_fe8591f2dbc108c5f420cea2c3dc49ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df08033841f857a7b340c366456d8bad = $(`<div id="html_df08033841f857a7b340c366456d8bad" style="width: 100.0%; height: 100.0%;"><b>Rachel Uffner Gallery</b><br>170 Suffolk St<br>Wed–Sun, 10AM–6PM<br><a href='https://racheluffnergallery.com/' target='_blank'>Website</a></div>`)[0];
+            popup_fe8591f2dbc108c5f420cea2c3dc49ce.setContent(html_df08033841f857a7b340c366456d8bad);
+        
+
+        marker_1dd33ef1d7397838c2edc4ab0965c800.bindPopup(popup_fe8591f2dbc108c5f420cea2c3dc49ce)
+        ;
+
+        
+    
+    
+            var marker_4cfb3ced4f705542f84cb45d8e1d27aa = L.marker(
+                [40.7174, -73.9928],
+                {}
+            ).addTo(feature_group_1052928b5668456c5de0a418cdaaea50);
+        
+    
+            var icon_51ade939008c08d89c890543223420fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4cfb3ced4f705542f84cb45d8e1d27aa.setIcon(icon_51ade939008c08d89c890543223420fa);
+        
+    
+        var popup_8e2de0e158640e8ba29811bcee8183a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9bfe12f74f14ca798d0109db777200e = $(`<div id="html_d9bfe12f74f14ca798d0109db777200e" style="width: 100.0%; height: 100.0%;"><b>601Artspace</b><br>88 Eldridge St<br>Thu–Sun, 1–6PM<br><a href='https://601artspace.org/' target='_blank'>Website</a></div>`)[0];
+            popup_8e2de0e158640e8ba29811bcee8183a8.setContent(html_d9bfe12f74f14ca798d0109db777200e);
+        
+
+        marker_4cfb3ced4f705542f84cb45d8e1d27aa.bindPopup(popup_8e2de0e158640e8ba29811bcee8183a8)
+        ;
+
+        
+    
+    
+            var feature_group_f90d60713ee5f9bf6aea6abdf25210b4 = L.featureGroup(
+                {}
+            ).addTo(map_e9467f74599982c9e9dd733f5a7e4b11);
+        
+    
+            var marker_90bad82181a2ae19c9686e2eb7d0a14a = L.marker(
+                [40.717, -73.9995],
+                {}
+            ).addTo(feature_group_f90d60713ee5f9bf6aea6abdf25210b4);
+        
+    
+            var icon_ac5e660371a3c9a1c25aaab0e8c627f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_90bad82181a2ae19c9686e2eb7d0a14a.setIcon(icon_ac5e660371a3c9a1c25aaab0e8c627f7);
+        
+    
+        var popup_d5ba013b67dd3565a7e753398f0e79ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f3ef9381e67b3e5ee0eb404afbf2bad = $(`<div id="html_3f3ef9381e67b3e5ee0eb404afbf2bad" style="width: 100.0%; height: 100.0%;"><b>MOCA</b><br>215 Centre St<br>Thu 11AM–9PM<br>Admission: Free<br><a href='https://www.mocanyc.org/' target='_blank'>Website</a></div>`)[0];
+            popup_d5ba013b67dd3565a7e753398f0e79ee.setContent(html_3f3ef9381e67b3e5ee0eb404afbf2bad);
+        
+
+        marker_90bad82181a2ae19c9686e2eb7d0a14a.bindPopup(popup_d5ba013b67dd3565a7e753398f0e79ee)
+        ;
+
+        
+    
+    
+            var marker_e15411983d70fc836c49a1bc6fa694f5 = L.marker(
+                [40.7188, -73.9901],
+                {}
+            ).addTo(feature_group_f90d60713ee5f9bf6aea6abdf25210b4);
+        
+    
+            var icon_a82a5af48505186e15e5d242bd736b9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_e15411983d70fc836c49a1bc6fa694f5.setIcon(icon_a82a5af48505186e15e5d242bd736b9c);
+        
+    
+        var popup_ff28bd5071a7fd85092292eb37550bca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d48eb356690071d1b4cc27dcfcc1d408 = $(`<div id="html_d48eb356690071d1b4cc27dcfcc1d408" style="width: 100.0%; height: 100.0%;"><b>Tenement Museum</b><br>103 Orchard St<br>Thu 10AM–5PM<br>Admission: $30<br><a href='https://www.tenement.org/' target='_blank'>Website</a></div>`)[0];
+            popup_ff28bd5071a7fd85092292eb37550bca.setContent(html_d48eb356690071d1b4cc27dcfcc1d408);
+        
+
+        marker_e15411983d70fc836c49a1bc6fa694f5.bindPopup(popup_ff28bd5071a7fd85092292eb37550bca)
+        ;
+
+        
+    
+    
+            var marker_7d3f2432bce15e30437663730c082a21 = L.marker(
+                [40.7141, -73.9932],
+                {}
+            ).addTo(feature_group_f90d60713ee5f9bf6aea6abdf25210b4);
+        
+    
+            var icon_64e45c30a1539543cfb944b5d81d8502 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_7d3f2432bce15e30437663730c082a21.setIcon(icon_64e45c30a1539543cfb944b5d81d8502);
+        
+    
+        var popup_d9208f0e7b15223e60f5e03272aad377 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b946ae79f5a8f350d8575bbecce5a7e4 = $(`<div id="html_b946ae79f5a8f350d8575bbecce5a7e4" style="width: 100.0%; height: 100.0%;"><b>Museum at Eldridge St</b><br>12 Eldridge St<br>Thu 10AM–5PM<br>Admission: $8–$15<br><a href='https://www.eldridgestreet.org/' target='_blank'>Website</a></div>`)[0];
+            popup_d9208f0e7b15223e60f5e03272aad377.setContent(html_b946ae79f5a8f350d8575bbecce5a7e4);
+        
+
+        marker_7d3f2432bce15e30437663730c082a21.bindPopup(popup_d9208f0e7b15223e60f5e03272aad377)
+        ;
+
+        
+    
+    
+            var feature_group_92e3456ac57e892d00375e5cb9d814d3 = L.featureGroup(
+                {}
+            ).addTo(map_e9467f74599982c9e9dd733f5a7e4b11);
+        
+    
+            var marker_190ea40409fcf237f2c385262208c8ad = L.marker(
+                [40.7169, -73.9936],
+                {}
+            ).addTo(feature_group_92e3456ac57e892d00375e5cb9d814d3);
+        
+    
+            var icon_66ed4fb6724ddc5f47080f0fd00d2da9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_190ea40409fcf237f2c385262208c8ad.setIcon(icon_66ed4fb6724ddc5f47080f0fd00d2da9);
+        
+    
+        var popup_ed9f85c0bc0d86c10b1b62bbdd798ea5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d9b55e885d046f51c0618eca113256c = $(`<div id="html_9d9b55e885d046f51c0618eca113256c" style="width: 100.0%; height: 100.0%;"><b>Love Not Money</b><br>42 Eldridge St<br><br><a href='https://evgrieve.com/2022/10/love-not-money-is-new-record-store-in.html' target='_blank'>Website</a></div>`)[0];
+            popup_ed9f85c0bc0d86c10b1b62bbdd798ea5.setContent(html_9d9b55e885d046f51c0618eca113256c);
+        
+
+        marker_190ea40409fcf237f2c385262208c8ad.bindPopup(popup_ed9f85c0bc0d86c10b1b62bbdd798ea5)
+        ;
+
+        
+    
+    
+            var marker_ea91d6a1c98d1c0cc070884b5c1ea184 = L.marker(
+                [40.7181, -73.9889],
+                {}
+            ).addTo(feature_group_92e3456ac57e892d00375e5cb9d814d3);
+        
+    
+            var icon_f9dce1ef5d467126d37f971e26b0144e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_ea91d6a1c98d1c0cc070884b5c1ea184.setIcon(icon_f9dce1ef5d467126d37f971e26b0144e);
+        
+    
+        var popup_3676ccebe7c083a9bb181622f55e61c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd41ef647c0ff6ed2becc56151420f0e = $(`<div id="html_bd41ef647c0ff6ed2becc56151420f0e" style="width: 100.0%; height: 100.0%;"><b>Catalyst Records</b><br>88 Essex St<br>Thu–Sat, 12–9PM<br><a href='https://www.essexmarket.nyc/vendors/catalyst-records-les' target='_blank'>Website</a></div>`)[0];
+            popup_3676ccebe7c083a9bb181622f55e61c9.setContent(html_bd41ef647c0ff6ed2becc56151420f0e);
+        
+
+        marker_ea91d6a1c98d1c0cc070884b5c1ea184.bindPopup(popup_3676ccebe7c083a9bb181622f55e61c9)
+        ;
+
+        
+    
+    
+            var marker_eb72313fdb897307d784875101bd677e = L.marker(
+                [40.7268, -73.9835],
+                {}
+            ).addTo(feature_group_92e3456ac57e892d00375e5cb9d814d3);
+        
+    
+            var icon_23cc0533e8ee4589096369611ca2d402 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_eb72313fdb897307d784875101bd677e.setIcon(icon_23cc0533e8ee4589096369611ca2d402);
+        
+    
+        var popup_20baaef09bd706a39bbfaf2236a61ad0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9036ab9c640a6a7de3d7b8b13efa4029 = $(`<div id="html_9036ab9c640a6a7de3d7b8b13efa4029" style="width: 100.0%; height: 100.0%;"><b>A-1 Records</b><br>439 E 6th St<br><br><a href='https://a-1records.com/' target='_blank'>Website</a></div>`)[0];
+            popup_20baaef09bd706a39bbfaf2236a61ad0.setContent(html_9036ab9c640a6a7de3d7b8b13efa4029);
+        
+
+        marker_eb72313fdb897307d784875101bd677e.bindPopup(popup_20baaef09bd706a39bbfaf2236a61ad0)
+        ;
+
+        
+    
+    
+            var feature_group_fc9993a742e8b17b0e668325ce3f504b = L.featureGroup(
+                {}
+            ).addTo(map_e9467f74599982c9e9dd733f5a7e4b11);
+        
+    
+            var marker_ce7b260f9571c0d1b24cbbd7d9ff23b2 = L.marker(
+                [40.7157, -73.9995],
+                {}
+            ).addTo(feature_group_fc9993a742e8b17b0e668325ce3f504b);
+        
+    
+            var icon_8c8d8aab98fab8633c17f3abded70e2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "brown", "prefix": "glyphicon"}
+            );
+            marker_ce7b260f9571c0d1b24cbbd7d9ff23b2.setIcon(icon_8c8d8aab98fab8633c17f3abded70e2d);
+        
+    
+        var popup_7f4ac3b790a211a5a3b97980c244e1b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_77070127b54445a4b277a02e253c9f27 = $(`<div id="html_77070127b54445a4b277a02e253c9f27" style="width: 100.0%; height: 100.0%;"><b>Yu & Me Books</b><br>44 Mulberry St<br>Thu–Sat, 11AM–11PM<br><a href='https://www.yuandmebooks.com/' target='_blank'>Website</a></div>`)[0];
+            popup_7f4ac3b790a211a5a3b97980c244e1b6.setContent(html_77070127b54445a4b277a02e253c9f27);
+        
+
+        marker_ce7b260f9571c0d1b24cbbd7d9ff23b2.bindPopup(popup_7f4ac3b790a211a5a3b97980c244e1b6)
+        ;
+
+        
+    
+    
+            var marker_0560a307ca96f027ecad909b08a6f707 = L.marker(
+                [40.7206, -73.9845],
+                {}
+            ).addTo(feature_group_fc9993a742e8b17b0e668325ce3f504b);
+        
+    
+            var icon_9c62aab02d3700677df3e8720f489d57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "brown", "prefix": "glyphicon"}
+            );
+            marker_0560a307ca96f027ecad909b08a6f707.setIcon(icon_9c62aab02d3700677df3e8720f489d57);
+        
+    
+        var popup_2d3fc9875b70031208b4c02f308fd162 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13a13c5d9a0c3e37f887c0269c2aefc8 = $(`<div id="html_13a13c5d9a0c3e37f887c0269c2aefc8" style="width: 100.0%; height: 100.0%;"><b>Bluestockings Cooperative</b><br>116 Suffolk St<br><br><a href='https://www.bluestockings.coop/' target='_blank'>Website</a></div>`)[0];
+            popup_2d3fc9875b70031208b4c02f308fd162.setContent(html_13a13c5d9a0c3e37f887c0269c2aefc8);
+        
+
+        marker_0560a307ca96f027ecad909b08a6f707.bindPopup(popup_2d3fc9875b70031208b4c02f308fd162)
+        ;
+
+        
+    
+    
+            var marker_1948fea5860975997e6f29be27135945 = L.marker(
+                [40.7136, -73.9911],
+                {}
+            ).addTo(feature_group_fc9993a742e8b17b0e668325ce3f504b);
+        
+    
+            var icon_28cb4f0265f3946881c5f69b504e9ee9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "brown", "prefix": "glyphicon"}
+            );
+            marker_1948fea5860975997e6f29be27135945.setIcon(icon_28cb4f0265f3946881c5f69b504e9ee9);
+        
+    
+        var popup_b9c0d010094ac77fab15b5f8b305bb54 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b533679fe8a66c61fd9096f2ac4ad721 = $(`<div id="html_b533679fe8a66c61fd9096f2ac4ad721" style="width: 100.0%; height: 100.0%;"><b>Aeon Bookstore</b><br>151 E Broadway<br><br><a href='https://bookshop.org/shop/aeonbookstore' target='_blank'>Website</a></div>`)[0];
+            popup_b9c0d010094ac77fab15b5f8b305bb54.setContent(html_b533679fe8a66c61fd9096f2ac4ad721);
+        
+
+        marker_1948fea5860975997e6f29be27135945.bindPopup(popup_b9c0d010094ac77fab15b5f8b305bb54)
+        ;
+
+        
+    
+    
+            var feature_group_7cdff8f835bb4b13159ed0ae6fcd0635 = L.featureGroup(
+                {}
+            ).addTo(map_e9467f74599982c9e9dd733f5a7e4b11);
+        
+    
+            var marker_fb97445e22325b787b650dd21cf238b9 = L.marker(
+                [40.7153, -73.9982],
+                {}
+            ).addTo(feature_group_7cdff8f835bb4b13159ed0ae6fcd0635);
+        
+    
+            var icon_c66627af7fa4ccd7a711ebf3f69923b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fb97445e22325b787b650dd21cf238b9.setIcon(icon_c66627af7fa4ccd7a711ebf3f69923b0);
+        
+    
+        var popup_ab809526ae51be4535f77ea5e5728e71 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_196c06e4d316323061651a15badb057f = $(`<div id="html_196c06e4d316323061651a15badb057f" style="width: 100.0%; height: 100.0%;"><b>Mahayana Buddhist Temple</b><br>133 Canal St<br><a href='https://loving-newyork.com/things-to-do-chinatown-nyc/' target='_blank'>More Info</a></div>`)[0];
+            popup_ab809526ae51be4535f77ea5e5728e71.setContent(html_196c06e4d316323061651a15badb057f);
+        
+
+        marker_fb97445e22325b787b650dd21cf238b9.bindPopup(popup_ab809526ae51be4535f77ea5e5728e71)
+        ;
+
+        
+    
+    
+            var marker_fc68c677e9f3adcfd9c4de65e44c3791 = L.marker(
+                [40.7223, -73.9937],
+                {}
+            ).addTo(feature_group_7cdff8f835bb4b13159ed0ae6fcd0635);
+        
+    
+            var icon_9d2af1c7cac7e3fedbba0dbf6b51a26c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fc68c677e9f3adcfd9c4de65e44c3791.setIcon(icon_9d2af1c7cac7e3fedbba0dbf6b51a26c);
+        
+    
+        var popup_df76f3bd7941842d433c26c1b5b126d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_247f096ed448419a2ff56595fb117b86 = $(`<div id="html_247f096ed448419a2ff56595fb117b86" style="width: 100.0%; height: 100.0%;"><b>Bowery Mural Wall</b><br>Bowery & Houston<br><a href='https://www.bowerymural.com/' target='_blank'>More Info</a></div>`)[0];
+            popup_df76f3bd7941842d433c26c1b5b126d3.setContent(html_247f096ed448419a2ff56595fb117b86);
+        
+
+        marker_fc68c677e9f3adcfd9c4de65e44c3791.bindPopup(popup_df76f3bd7941842d433c26c1b5b126d3)
+        ;
+
+        
+    
+    
+            var marker_0ce1291337c0e154a73f638232ba3c50 = L.marker(
+                [40.7142, -73.9983],
+                {}
+            ).addTo(feature_group_7cdff8f835bb4b13159ed0ae6fcd0635);
+        
+    
+            var icon_a631ae46de1da6765fdb3d2831c8e1ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0ce1291337c0e154a73f638232ba3c50.setIcon(icon_a631ae46de1da6765fdb3d2831c8e1ec);
+        
+    
+        var popup_b1a24d3aa9f587da5ae1259ce447d90a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37d195239b03efea934ac5463d8969de = $(`<div id="html_37d195239b03efea934ac5463d8969de" style="width: 100.0%; height: 100.0%;"><b>Doyers Street</b><br>Doyers St<br><a href='' target='_blank'>More Info</a></div>`)[0];
+            popup_b1a24d3aa9f587da5ae1259ce447d90a.setContent(html_37d195239b03efea934ac5463d8969de);
+        
+
+        marker_0ce1291337c0e154a73f638232ba3c50.bindPopup(popup_b1a24d3aa9f587da5ae1259ce447d90a)
+        ;
+
+        
+    
+    
+            var feature_group_4fd161ddc96c975d55a41483c1695291 = L.featureGroup(
+                {}
+            ).addTo(map_e9467f74599982c9e9dd733f5a7e4b11);
+        
+    
+            var marker_43dee05fd5fcfea4aa3b34a8ccdb4455 = L.marker(
+                [40.715, -73.999],
+                {}
+            ).addTo(feature_group_4fd161ddc96c975d55a41483c1695291);
+        
+    
+            var icon_837ad0ead1fa909a205d010f78d102e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_43dee05fd5fcfea4aa3b34a8ccdb4455.setIcon(icon_837ad0ead1fa909a205d010f78d102e0);
+        
+    
+        var popup_935419a674e63e3efe1d25469577c78a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_12861e32560264c40c3591c9f893fae4 = $(`<div id="html_12861e32560264c40c3591c9f893fae4" style="width: 100.0%; height: 100.0%;"><b>Columbus Park</b><br>67 Mulberry St</div>`)[0];
+            popup_935419a674e63e3efe1d25469577c78a.setContent(html_12861e32560264c40c3591c9f893fae4);
+        
+
+        marker_43dee05fd5fcfea4aa3b34a8ccdb4455.bindPopup(popup_935419a674e63e3efe1d25469577c78a)
+        ;
+
+        
+    
+    
+            var marker_96d11f1d42d3bf0fb7035dd17c3eb49f = L.marker(
+                [40.7197, -73.9789],
+                {}
+            ).addTo(feature_group_4fd161ddc96c975d55a41483c1695291);
+        
+    
+            var icon_31ae2398e80af9a3157a6708c87bb2b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_96d11f1d42d3bf0fb7035dd17c3eb49f.setIcon(icon_31ae2398e80af9a3157a6708c87bb2b2);
+        
+    
+        var popup_cf41237cc856da51c4e9c837b82552f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_793c40dccd5ed4af9870ced34c21ef31 = $(`<div id="html_793c40dccd5ed4af9870ced34c21ef31" style="width: 100.0%; height: 100.0%;"><b>Hamilton Fish Park</b><br>128 Pitt St</div>`)[0];
+            popup_cf41237cc856da51c4e9c837b82552f4.setContent(html_793c40dccd5ed4af9870ced34c21ef31);
+        
+
+        marker_96d11f1d42d3bf0fb7035dd17c3eb49f.bindPopup(popup_cf41237cc856da51c4e9c837b82552f4)
+        ;
+
+        
+    
+    
+            var marker_811f848b4c57e68e027494541cac3206 = L.marker(
+                [40.7118, -73.9772],
+                {}
+            ).addTo(feature_group_4fd161ddc96c975d55a41483c1695291);
+        
+    
+            var icon_a5d0f386ae53f76cf0fe102f49f1e8d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_811f848b4c57e68e027494541cac3206.setIcon(icon_a5d0f386ae53f76cf0fe102f49f1e8d4);
+        
+    
+        var popup_f8d103f15e877f18ae4eff45b69f600a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce9b85526f8b3c5ca6ca80f927919625 = $(`<div id="html_ce9b85526f8b3c5ca6ca80f927919625" style="width: 100.0%; height: 100.0%;"><b>Pier 42 Park</b><br>Montgomery St & East River</div>`)[0];
+            popup_f8d103f15e877f18ae4eff45b69f600a.setContent(html_ce9b85526f8b3c5ca6ca80f927919625);
+        
+
+        marker_811f848b4c57e68e027494541cac3206.bindPopup(popup_f8d103f15e877f18ae4eff45b69f600a)
+        ;
+
+        
+    
+    
+            var feature_group_58c4df2c34888894b6b94d2766123cfb = L.featureGroup(
+                {}
+            ).addTo(map_e9467f74599982c9e9dd733f5a7e4b11);
+        
+    
+            var marker_e9e701e4501ce3e590f9decc1c8b78a3 = L.marker(
+                [40.7159, -73.9846],
+                {}
+            ).addTo(feature_group_58c4df2c34888894b6b94d2766123cfb);
+        
+    
+            var icon_c0eccbaaed05902d6bfd9eba5cd33cfe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_e9e701e4501ce3e590f9decc1c8b78a3.setIcon(icon_c0eccbaaed05902d6bfd9eba5cd33cfe);
+        
+    
+        var popup_fa7026cfbdd557c1f82f5d52a96803cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f0bcf0244c241d59da25ba27ec1633f = $(`<div id="html_4f0bcf0244c241d59da25ba27ec1633f" style="width: 100.0%; height: 100.0%;"><b>Ost Café</b><br>511 Grand St</div>`)[0];
+            popup_fa7026cfbdd557c1f82f5d52a96803cd.setContent(html_4f0bcf0244c241d59da25ba27ec1633f);
+        
+
+        marker_e9e701e4501ce3e590f9decc1c8b78a3.bindPopup(popup_fa7026cfbdd557c1f82f5d52a96803cd)
+        ;
+
+        
+    
+    
+            var marker_0f0140f8b81cf71a4e12512dcdb38ad3 = L.marker(
+                [40.7136, -73.9904],
+                {}
+            ).addTo(feature_group_58c4df2c34888894b6b94d2766123cfb);
+        
+    
+            var icon_6ae2919d6ed955b7299f4e16514a4dda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_0f0140f8b81cf71a4e12512dcdb38ad3.setIcon(icon_6ae2919d6ed955b7299f4e16514a4dda);
+        
+    
+        var popup_90ca67e1dbfe0044cabd17cc1fa38389 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c4dd8af82b3aff93dbbc93c0699bbb7 = $(`<div id="html_7c4dd8af82b3aff93dbbc93c0699bbb7" style="width: 100.0%; height: 100.0%;"><b>Little Canal</b><br>26 Canal St</div>`)[0];
+            popup_90ca67e1dbfe0044cabd17cc1fa38389.setContent(html_7c4dd8af82b3aff93dbbc93c0699bbb7);
+        
+
+        marker_0f0140f8b81cf71a4e12512dcdb38ad3.bindPopup(popup_90ca67e1dbfe0044cabd17cc1fa38389)
+        ;
+
+        
+    
+    
+            var marker_c300957c934372ddc8d343d82b52a777 = L.marker(
+                [40.7195, -73.9868],
+                {}
+            ).addTo(feature_group_58c4df2c34888894b6b94d2766123cfb);
+        
+    
+            var icon_78e3c8baff34943d2606ac0876ddd349 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_c300957c934372ddc8d343d82b52a777.setIcon(icon_78e3c8baff34943d2606ac0876ddd349);
+        
+    
+        var popup_0019c0d41cab9ecab3a3b44ce006927d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a0a4d8b8b4c0ceb3d5d16138e9882bb = $(`<div id="html_2a0a4d8b8b4c0ceb3d5d16138e9882bb" style="width: 100.0%; height: 100.0%;"><b>Davelle</b><br>102 Suffolk St</div>`)[0];
+            popup_0019c0d41cab9ecab3a3b44ce006927d.setContent(html_2a0a4d8b8b4c0ceb3d5d16138e9882bb);
+        
+
+        marker_c300957c934372ddc8d343d82b52a777.bindPopup(popup_0019c0d41cab9ecab3a3b44ce006927d)
+        ;
+
+        
+    
+    
+            var marker_8384edf0d0ac98c8006b5bef61449c2d = L.marker(
+                [40.7204, -73.9873],
+                {}
+            ).addTo(feature_group_58c4df2c34888894b6b94d2766123cfb);
+        
+    
+            var icon_9fe4723f0d39f1375319e4013a1b3dc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_8384edf0d0ac98c8006b5bef61449c2d.setIcon(icon_9fe4723f0d39f1375319e4013a1b3dc6);
+        
+    
+        var popup_83750730a932e4820486bc01f396d056 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c41dceca8e21ad5c65bc314a7517e395 = $(`<div id="html_c41dceca8e21ad5c65bc314a7517e395" style="width: 100.0%; height: 100.0%;"><b>Caffè Vita</b><br>124 Ludlow St</div>`)[0];
+            popup_83750730a932e4820486bc01f396d056.setContent(html_c41dceca8e21ad5c65bc314a7517e395);
+        
+
+        marker_8384edf0d0ac98c8006b5bef61449c2d.bindPopup(popup_83750730a932e4820486bc01f396d056)
+        ;
+
+        
+    
+    
+            var marker_c66690297310c786da0cdd2e551c1854 = L.marker(
+                [40.7198, -73.9837],
+                {}
+            ).addTo(feature_group_58c4df2c34888894b6b94d2766123cfb);
+        
+    
+            var icon_5cf2a83c1b5092e94c40f4e7a9b999d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_c66690297310c786da0cdd2e551c1854.setIcon(icon_5cf2a83c1b5092e94c40f4e7a9b999d7);
+        
+    
+        var popup_17faaa5f5cfa5edf6f15bdad28b979a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05be166006316bb2308907f2dee457ad = $(`<div id="html_05be166006316bb2308907f2dee457ad" style="width: 100.0%; height: 100.0%;"><b>Black Cat LES</b><br>172 Rivington St</div>`)[0];
+            popup_17faaa5f5cfa5edf6f15bdad28b979a5.setContent(html_05be166006316bb2308907f2dee457ad);
+        
+
+        marker_c66690297310c786da0cdd2e551c1854.bindPopup(popup_17faaa5f5cfa5edf6f15bdad28b979a5)
+        ;
+
+        
+    
+    
+            var feature_group_d9f0dc8d0fcf4aefb999dbcdf4d1b2a3 = L.featureGroup(
+                {}
+            ).addTo(map_e9467f74599982c9e9dd733f5a7e4b11);
+        
+    
+            var marker_5978455fd5a6a257fe9d4228f5816767 = L.marker(
+                [40.7176, -73.9953],
+                {}
+            ).addTo(feature_group_d9f0dc8d0fcf4aefb999dbcdf4d1b2a3);
+        
+    
+            var icon_d372765fc9d3b10d09adcdae0e111583 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5978455fd5a6a257fe9d4228f5816767.setIcon(icon_d372765fc9d3b10d09adcdae0e111583);
+        
+    
+        var popup_fef3ffb901730052e433e13e1fbc2c57 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5f309c53e796edc0b734381a6eb3527 = $(`<div id="html_c5f309c53e796edc0b734381a6eb3527" style="width: 100.0%; height: 100.0%;"><b>Potluck Club</b><br>Dinner Reservation at 8:15PM</div>`)[0];
+            popup_fef3ffb901730052e433e13e1fbc2c57.setContent(html_c5f309c53e796edc0b734381a6eb3527);
+        
+
+        marker_5978455fd5a6a257fe9d4228f5816767.bindPopup(popup_fef3ffb901730052e433e13e1fbc2c57)
+        ;
+
+        
+    
+    
+            var layer_control_6bc0057d4da08764c0038a412e4aa74d = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_74fbfcf63421e5bf50ac16373dfb7152,
+                },
+                overlays :  {
+                    "Art Galleries" : feature_group_1052928b5668456c5de0a418cdaaea50,
+                    "Museums" : feature_group_f90d60713ee5f9bf6aea6abdf25210b4,
+                    "Record Shops" : feature_group_92e3456ac57e892d00375e5cb9d814d3,
+                    "Bookstores" : feature_group_fc9993a742e8b17b0e668325ce3f504b,
+                    "Landmarks" : feature_group_7cdff8f835bb4b13159ed0ae6fcd0635,
+                    "Parks" : feature_group_4fd161ddc96c975d55a41483c1695291,
+                    "Coffee Shops" : feature_group_58c4df2c34888894b6b94d2766123cfb,
+                    "Dinner Spot" : feature_group_d9f0dc8d0fcf4aefb999dbcdf4d1b2a3,
+                },
+            };
+            L.control.layers(
+                layer_control_6bc0057d4da08764c0038a412e4aa74d.base_layers,
+                layer_control_6bc0057d4da08764c0038a412e4aa74d.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_e9467f74599982c9e9dd733f5a7e4b11);
+        
+</script>
+</html>
